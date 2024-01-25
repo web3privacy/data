@@ -4,3 +4,7 @@ core-team:
   - name: Mykola
   - name: PG
   - name: Coinmandeer
+projects:
+  $load: projects
+events:
+  $load: events

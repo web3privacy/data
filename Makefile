@@ -1,4 +1,4 @@
-all: build
+all: test build
 
 cache:
 	deno cache utils/build.js

@@ -4,3 +4,5 @@ const engine = new Engine();
 await engine.init();
 
 await engine.build();
+
+console.log('Done')

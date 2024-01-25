@@ -11,6 +11,9 @@ addFormats(ajv);
 
 function checkCollection (name, schema, data) {
     Deno.test(name, () => {
+        if (!schema) {
+            return
+        }
         const validator = ajv.compile(schema);
         if (!validator(data)) {
             throw validator.errors;

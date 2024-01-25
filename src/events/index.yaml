@@ -41,25 +41,13 @@
   links:
     web: https://lu.ma/w3pm-prg1
 
-- id: w3pm-bcn1
+- id: w3pm-ath1
   type: meetup
   date: "2024/Q1"
-  city: Barcelona
-  country: es
+  city: Athens
+  country: gr
   coincidence: ""
-  lead: Tree
-  helpers:
-    -  Mykola
-  optional: true
-  slots: 3
-
-- id: w3pm-itxx
-  type: meetup
-  date: "2024/Q1"
-  city: Italy (TBD)
-  country: it
-  coincidence: ""
-  lead: PG
+  lead: Mykola
   optional: true
   slots: 3
 
@@ -125,9 +113,10 @@
 
 - id: w3pm-ber1
   type: meetup
-  date: "2024-05-25"
+  date: "2024-05-22"
   city: Berlin
   country: de
+  place: "[c-base](https://c-base.org/)"
   # ETHBerlin 4 - May 24-26, 2024
   coincidence: "ETHBerlin"
   lead: Tree
@@ -137,9 +126,10 @@
 
 - id: w3ps3
   type: summit
-  date: "2024-06-04"
+  date: "2024-05-30"
   city: Prague
   country: cz
+  # ETHPrague 2024 - May 31-June 2 2024
   coincidence: "ETHPrague"
   lead: Tree
   helpers:
