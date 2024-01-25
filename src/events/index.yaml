@@ -43,7 +43,7 @@
 
 - id: w3pm-ath1
   type: meetup
-  date: "2024/Q1"
+  date: "2024/Feb"
   city: Athens
   country: gr
   coincidence: ""
@@ -120,6 +120,8 @@
   # ETHBerlin 4 - May 24-26, 2024
   coincidence: "ETHBerlin"
   lead: Tree
+  helpers:
+    - ligi
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
