@@ -36,18 +36,19 @@ export class Engine {
       return out
     }
 
+    const arr = [];
     for await (const dirEntry of Deno.readDir(dir)) {
       const [fn, ext] = dirEntry.name.split(".");
 
       if (!ext) {
-        out[fn] = await this.loadDir(join(src, fn))
-        continue;
+        const obj = Object.assign({ id: fn }, await this.loadDir(join(src, fn)))
+        arr.push(obj)
       }
-      if (ext === "yaml" && fn !== "index") {
+      /*if (ext === "yaml" && fn !== "index") {
         out[fn] = await readYamlFile(join(dir, dirEntry.name));
-      }
+      }*/
     }
-    return out
+    return arr
   }
 
   async render(src) {

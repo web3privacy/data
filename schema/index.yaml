@@ -1,1 +1,89 @@
+$defs:
+  project:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+      - name
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      type:
+        type: string
+        enum:
+          - research
+      links:
+        type: object
+  event:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+      - date
+      - city
+      - country
+    properties:
+      id:
+        type: string
+      type:
+        type: string
+        enum:
+          - summit
+          - meetup
+          - hackathon
+      confirmed:
+        type: boolean
+      date:
+        type: string
+      days:
+        type: number
+      city:
+        type: string
+      country:
+        type: string
+        pattern: "^\\w{2}$"
+      place:
+        type: string
+      coincidence:
+        type: string
+      lead:
+        type: string
+      helpers:
+        type: array
+        items:
+          type: string
+      slots:
+        type: number
+      visitors:
+        type: number
+      optional:
+        type: boolean
+      links:
+        type: object
+        additionalProperties: false
+        patternProperties:
+          "^[\\w]+":
+            type: string
+            format: uri
+
 type: object
+additionalProperties: false
+properties:
+  name:
+    type: string
+  links:
+    type: object
+  core-team:
+    type: array
+
+  projects:
+    type: array
+    items:
+      $ref: "#/$defs/project"
+    
+  events:
+    type: array
+    items:
+      $ref: "#/$defs/event"

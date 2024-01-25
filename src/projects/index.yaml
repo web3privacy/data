@@ -1,0 +1,57 @@
+- id: privacy-explorer
+  name: Privacy Explorer
+  links:
+    docs: https://docs.web3privacy.info/projects/privacy-explorer
+
+- id: privacy-tech-awards
+  name: Privacy Tech Awards
+  links:
+    docs: https://docs.web3privacy.info/projects/privacy-tech-awards
+
+- id: annual-report
+  name: Privacy Annual Report
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/annual-report
+
+- id: pagency
+  name: Pagency Framework for private use-case ideation
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/pagency
+
+- id: hiring
+  name: Privacy Projects Hiring
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/hiring
+
+- id: privacy-guides
+  name: Privacy Guides
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/privacy-guides
+
+- id: usecase-db
+  name: Privacy Use-Cases DB
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/usecase-db
+
+- id: zk-solutions
+  name: ZK Solutions DB
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/zk-solutions
+
+- id: hackathon-pack
+  name: Hackathon Curation Pack
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/hackathon-pack
+
+- id: privacy-ecosystem-report
+  name: "Ethereum Privacy Ecosystem: report"
+  type: research
+  links:
+    docs: https://docs.web3privacy.info/research/Ethereum%20Privacy%20Ecosystem

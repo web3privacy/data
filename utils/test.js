@@ -22,7 +22,4 @@ function checkCollection (name, schema, data) {
 }
 
 // check index
-checkCollection("index", engine.schemas.index, engine.index)
-for (const col of Object.keys(engine.db)) {
-    checkCollection(`collection: ${col}`, engine.schemas[col], engine.db[col])   
-}
+checkCollection("index", engine.schemas.index, engine.rendered)
