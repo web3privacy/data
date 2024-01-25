@@ -36,8 +36,8 @@ jobs:
       - name: Build bundle
         run: make build
 
-      #- name: Add custom domain
-      #  run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
+      - name: Add custom domain
+        run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
