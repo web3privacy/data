@@ -46,6 +46,8 @@ $defs:
         pattern: "^\\w{2}$"
       place:
         type: string
+      place-address:
+        type: string
       coincidence:
         type: string
       lead:
