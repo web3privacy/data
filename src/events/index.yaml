@@ -116,6 +116,7 @@
 
 - id: w3pm-ber1
   type: meetup
+  tags: [ sfe ]
   date: "2024-05-22"
   city: Berlin
   country: de
