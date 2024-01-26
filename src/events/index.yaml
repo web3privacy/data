@@ -257,10 +257,10 @@
 
 - id: w3pm-dc1
   type: meetup
-  date: "2024-11-20"
-  city: SE Asia
-  country: xx
-  # Devcon 7 - probably November (?)
+  date: "2024-11-11"
+  city: Bangkok
+  country: th
+  # Devcon 7 - 12-15 Nov, 2024
   coincidence: "[Devcon](https://devcon.org/)"
   slots: 5
   links:
