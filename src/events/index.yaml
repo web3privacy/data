@@ -223,6 +223,11 @@
   slots: 10
   links:
     rsvp: https://lu.ma/w3pn-bled-hackathon1
+  speakers:
+    - vaclav-pavlin
+    - mykola-siusko
+    - pg
+    - tree
 
 - id: w3pm-lju1
   type: meetup
