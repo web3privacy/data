@@ -125,6 +125,8 @@
     - Alina
   links:
     rsvp: https://lu.ma/w3pn-meetup-bucharest1
+  speakers:
+    - gabari
 
 - id: w3pm-ams1
   type: meetup
@@ -141,6 +143,8 @@
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-ams1
+  speakers:
+    - gabari
 
 - id: w3pm-tal1
   type: meetup
@@ -163,6 +167,8 @@
   coincidence: "[ETHPorto](https://ethporto.org/)"
   slots: 3
   optional: true
+  speakers:
+    - gabari
 
 - id: w3pm-ber1
   type: meetup
@@ -196,6 +202,8 @@
   slots: 16
   links:
     rsvp: https://lu.ma/w3pn-summit-prague2
+  speakers:
+    - gabari
 
 - id: w3ph1
   type: hackathon
