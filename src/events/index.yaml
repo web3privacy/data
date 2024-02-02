@@ -95,6 +95,9 @@
   lead: Mykola
   optional: true
   slots: 3
+  speakers:
+    - odysseas
+    - mykola-siusko
 
 - id: w3pm-lib1
   type: meetup
