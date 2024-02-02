@@ -13,6 +13,26 @@
   links:
     web: https://prague.web3privacy.info/
     git: https://github.com/web3privacy/w3ps1
+  speakers:
+    - ameen-soleimani
+    - guy-zyskind
+    - max-hampshire
+    - antoni-zolciak
+    - rachel-rose-oleary
+    - alex-kampa
+    - oliver-gale
+    - mario-havel
+    - costanza-gallo 
+    - manu-alzuru
+    - nick-almond
+    - juraj-bednar
+    - dcbuilder
+    - alona-shevchenko
+    - tibor-csoka
+    - merula
+    - serinko
+    - steffen-kux
+    - althea
 
 - id: w3ps2
   type: summit

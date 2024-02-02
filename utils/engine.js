@@ -26,13 +26,25 @@ export class Engine {
     this.rendered = await this.render(this.index);
   }
 
-  async loadDir(src, opts = {}) {
+  async loadDir(src, opts = {}, full = {}) {
     const out = {};
     const dir = join(SRC_DIR, src);
     console.log(`reading dir=${dir}`);
 
     if (await exists(join(dir, "index.yaml"))) {
-      const out = readYamlFile(join(dir, "index.yaml"));
+      const out = await readYamlFile(join(dir, "index.yaml"));
+      if (opts.loader === "events") {
+        // check speaker connection
+        for (const ev of out) {
+          if (ev.speakers) {
+            for (const spId of ev.speakers) {
+              if (!full.people.find((p) => p.id === spId)) {
+                throw new Error(`Speaker not exists: ${spId} (event ${ev.id})`);
+              }
+            }
+          }
+        }
+      }
       return out;
     }
 
@@ -50,7 +62,7 @@ export class Engine {
       if (!ext && !fn.startsWith("_")) {
         const obj = Object.assign(
           { id: fn },
-          await this.loadDir(join(src, fn)),
+          await this.loadDir(join(src, fn), opts, full),
         );
         arr.push(obj);
       }
@@ -78,7 +90,7 @@ export class Engine {
     for (const key of Object.keys(src)) {
       const val = src[key];
       if (typeof val === "object" && val.$load) {
-        out[key] = await this.loadDir(val.$load, val.$opts);
+        out[key] = await this.loadDir(val.$load, val.$opts, out);
         continue;
       }
 

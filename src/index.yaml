@@ -18,9 +18,11 @@ core-team:
   - name: Coinmandeer
 projects:
   $load: projects
-events:
-  $load: events
 people:
   $load: people
   $opts:
     loader: person
+events:
+  $load: events
+  $opts:
+    loader: events
