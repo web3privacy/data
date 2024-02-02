@@ -75,6 +75,32 @@ $defs:
           "^[\\w]+":
             type: string
             format: uri
+  person:
+    type: object
+    additionalProperties: false
+    required:
+      - name
+    properties:
+      name:
+        type: string
+      caption:
+        type: string
+      country:
+        type: string
+        pattern: '^[a-z]{2}$'
+      refs:
+        type: object
+        additionalProperties: false
+        properties:
+          twitter:
+            type: string
+          linkedin:
+            type: string
+          bsky:
+            type: string
+      imageUrl:
+        type: string
+        format: uri
 
 type: object
 additionalProperties: false
@@ -95,3 +121,8 @@ properties:
     type: array
     items:
       $ref: "#/$defs/event"
+
+  people:
+    type: array
+    items:
+      $ref: "#/$defs/person"

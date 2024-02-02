@@ -5,4 +5,4 @@ await engine.init();
 
 await engine.build();
 
-console.log('Done')
+console.log("Done");
