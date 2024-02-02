@@ -246,6 +246,8 @@
   slots: 5
   links:
     rsvp: https://lu.ma/w3pn-meetup-ljubljana1
+  speakers:
+    - mykola-siusko
 
 - id: w3pm-bcn1
   type: meetup
@@ -269,6 +271,8 @@
     - Tree
   links:
     rsvp: https://lu.ma/w3pn-meetup-bru1
+  speakers:
+    - mykola-siusko
 
 - id: w3pm-waw1
   type: meetup
@@ -305,6 +309,8 @@
      - Alina
   links:
     rsvp: https://lu.ma/w3pn-meetup-rome1
+  speakers:
+    - mykola-siusko
 
 - id: w3ps4
   type: summit
@@ -320,6 +326,10 @@
   slots: 16
   links:
     rsvp: https://lu.ma/w3pn-summit-brno1
+  speakers:
+    - mykola-siusko
+    - pg
+    - tree
 
 - id: w3pm-dc1
   type: meetup
