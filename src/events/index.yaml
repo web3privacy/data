@@ -126,6 +126,7 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-bucharest1
   speakers:
+    - mykola-siusko
     - gabari
 
 - id: w3pm-ams1
@@ -144,6 +145,7 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-ams1
   speakers:
+    - mykola-siusko
     - gabari
 
 - id: w3pm-tal1
@@ -203,6 +205,7 @@
   links:
     rsvp: https://lu.ma/w3pn-summit-prague2
   speakers:
+    - mykola-siusko
     - gabari
 
 - id: w3ph1
