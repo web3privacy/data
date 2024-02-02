@@ -88,6 +88,8 @@ $defs:
         pattern: "^[a-z0-9-]+$"
       name:
         type: string
+      nickname:
+        type: string
       caption:
         type: string
       country:

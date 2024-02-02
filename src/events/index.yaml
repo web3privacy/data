@@ -48,6 +48,24 @@
   visitors: 139
   links:
     web: https://lu.ma/web3privacynow_rome
+  speakers:
+    - eleanore-blanc
+    - rik-krieger
+    - vincenzo-iovino
+    - alan-scott
+    - kieran-mesquita
+    - andrea-togni
+    - jaromil
+    - catsnaks
+    - serinko
+    - vaclav-pavlin
+    - alex-zaidelson
+    - r-prokh
+    - carlo-chialastri
+    - limone-eth
+    - costanza-gallo
+    - pg
+    - catsnaks
 
 - id: w3pm-prg1
   type: meetup
