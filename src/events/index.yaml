@@ -81,6 +81,10 @@
   visitors: 15
   links:
     web: https://lu.ma/w3pm-prg1
+  speakers:
+    - vaclav-pavlin
+    - radek-svarz
+    - marcel-kolaja
 
 - id: w3pm-ath1
   type: meetup
