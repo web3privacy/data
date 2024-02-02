@@ -81,6 +81,9 @@ $defs:
     required:
       - name
     properties:
+      id:
+        type: string
+        pattern: "^[a-z0-9-]+$"
       name:
         type: string
       caption:

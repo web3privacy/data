@@ -55,7 +55,10 @@ export class Engine {
         arr.push(obj);
       }
       if (ext === "yaml" && fn !== "index") {
-        const item = await readYamlFile(join(dir, dirEntry.name));
+        const item = Object.assign(
+          { id: fn },
+          await readYamlFile(join(dir, dirEntry.name)),
+        );
         if (opts.loader === "person") {
           // load image
           const img = images.find((i) => i.id === fn);
