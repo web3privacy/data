@@ -114,6 +114,11 @@ additionalProperties: false
 properties:
   name:
     type: string
+  email:
+    type: string
+    format: email
+  domain:
+    type: string
   links:
     type: object
   core-team:
