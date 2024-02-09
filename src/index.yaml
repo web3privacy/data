@@ -13,9 +13,21 @@ links:
   telegram: https://t.me/web3privacynow
 core-team:
   - name: Tree
+    refs:
+      github: burningtree
+      bsky: tree.fail
+      email: tree@tree.fail
   - name: Mykola
+    refs:
+      github: msiusko
+      twitter: nicksvyaznoy
   - name: PG
+    refs:
+      github: EclecticSamurai
+      twitter: PG_CDG
   - name: Coinmandeer
+    refs:
+      github: coinmandeer
 projects:
   $load: projects
 people:

@@ -118,6 +118,16 @@ properties:
     type: object
   core-team:
     type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - name
+      properties:
+        name:
+          type: string
+        refs:
+          type: object
 
   projects:
     type: array
