@@ -17,17 +17,21 @@ core-team:
       github: burningtree
       bsky: tree.fail
       email: tree@tree.fail
+      matrix: tree:gwei.cz
   - name: Mykola
     refs:
       github: msiusko
       twitter: nicksvyaznoy
+      matrix: k1983:matrix.org
   - name: PG
     refs:
       github: EclecticSamurai
       twitter: PG_CDG
+      matrix: pg_cdg:matrix.org
   - name: Coinmandeer
     refs:
       github: coinmandeer
+      matrix: coinmandeer:matrix.org
 projects:
   $load: projects
 people:
