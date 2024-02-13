@@ -125,6 +125,7 @@
     - Alina
   links:
     rsvp: https://lu.ma/w3pn-meetup-bucharest1
+    signal: https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ
   speakers:
     - mykola-siusko
     - gabari
@@ -144,6 +145,7 @@
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-ams1
+    signal: https://signal.group/#CjQKIEZbdyGk2CnVLXJ4u87cdRPPE2W4crwz7U-Tt1AFHsu2EhCxC25OkPV47uoTrNa2dww6
   speakers:
     - mykola-siusko
     - gabari
@@ -188,6 +190,7 @@
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
+    signal: https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A
 
 - id: w3ps3
   type: summit
