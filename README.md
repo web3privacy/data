@@ -1,5 +1,7 @@
 # Web3Privacy Now Data
 
+[![Build and Deploy](https://github.com/web3privacy/data/actions/workflows/deploy.yml/badge.svg)](https://github.com/web3privacy/data/actions/workflows/deploy.yml)
+
 This is a repository with structured dataset with basic informations about the [Web3Privacy Now](https://web3privacy.info/) initiative.
 
 You can find it here:
