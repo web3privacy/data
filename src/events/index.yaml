@@ -187,6 +187,8 @@
   lead: Tree
   helpers:
     - ligi
+  speakers:
+    - afri-schoedon
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
@@ -231,6 +233,7 @@
     rsvp: https://lu.ma/w3pn-bled-hackathon1
   speakers:
     - vaclav-pavlin
+    - afri-schoedon
     - mykola-siusko
     - pg
     - tree
