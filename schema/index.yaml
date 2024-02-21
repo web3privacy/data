@@ -57,6 +57,8 @@ $defs:
         type: string
       coincidence:
         type: string
+      coincidenceFull:
+        type: string
       lead:
         type: string
       helpers:
