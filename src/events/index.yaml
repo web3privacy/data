@@ -318,6 +318,16 @@
   speakers:
     - mykola-siusko
 
+- id: pc-rome-2024
+  type: privacy-corner
+  date: "2024-10-04"
+  days: 3
+  city: Brno
+  country: cz
+  coincidence: ETHRome
+  coincidenceFull: ETHRome 2024
+  lead: Tree
+
 - id: w3ps4
   type: summit
   date: "2024-10-24"
@@ -336,6 +346,16 @@
     - mykola-siusko
     - pg
     - tree
+
+- id: pc-brno-2024
+  type: privacy-corner
+  date: "2024-10-25"
+  days: 3
+  city: Brno
+  country: cz
+  coincidence: ETHBrno
+  coincidenceFull: ETHBrno3
+  lead: Tree
 
 - id: w3pm-dc1
   type: meetup

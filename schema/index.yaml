@@ -33,6 +33,7 @@ $defs:
           - summit
           - meetup
           - hackathon
+          - privacy-corner
       confirmed:
         type: boolean
       tags:
