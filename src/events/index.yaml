@@ -210,8 +210,9 @@
   links:
     rsvp: https://lu.ma/w3pn-summit-prague2
   speakers:
-    - mykola-siusko
+    - pavol-luptak
     - gabari
+    - mykola-siusko
 
 - id: w3ph1
   type: hackathon
