@@ -108,6 +108,8 @@ $defs:
             type: string
           bsky:
             type: string
+          github:
+            type: string
       imageUrl:
         type: string
         format: uri
