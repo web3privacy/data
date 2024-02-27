@@ -315,6 +315,8 @@
   optional: true
   helpers:
     - czepluch
+  links:
+    rsvp: https://lu.ma/w3pn-m24cph
 
 - id: m24rom
   issue: 13
