@@ -249,7 +249,7 @@
     - mykola-siusko
     - pg
     - tree
-
+  
 - id: m24lju
   issue: 12
   type: meetup
@@ -268,6 +268,13 @@
   speakers:
     - joshua-davila
     - mykola-siusko
+
+- id: os24q2
+  type: online-summit
+  name-extension: Q2
+  date: "2024-06-23"
+  lead: Tree
+  slots: 8
 
 - id: m24bcn
   issue: 20
@@ -313,6 +320,13 @@
   optional: true
   links:
     rsvp: https://lu.ma/w3pn-m24waw
+
+- id: os24q3
+  type: online-summit
+  name-extension: Q3
+  date: "2024/Sep"
+  lead: Tree
+  slots: 8
 
 - id: m24cph
   issue: 18
@@ -404,3 +418,10 @@
     rsvp: https://lu.ma/w3pn-meetup-devcon7
   speakers:
     - edward-fricker
+
+- id: os24q4
+  type: online-summit
+  name-extension: Q4
+  date: "2024/Dec"
+  lead: Tree
+  slots: 8

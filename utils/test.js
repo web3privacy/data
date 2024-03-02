@@ -30,6 +30,7 @@ const eventTypes = {
   meetup: { code: "m" },
   hackathon: { code: "h" },
   "privacy-corner": { code: "c" },
+  "online-summit": { code: "os" },
 };
 const usedIds = [];
 for (const event of engine.rendered.events) {

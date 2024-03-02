@@ -22,8 +22,8 @@ $defs:
     required:
       - id
       - date
-      - city
-      - country
+      #- city
+      #- country
     properties:
       id:
         type: string
@@ -36,6 +36,7 @@ $defs:
           - meetup
           - hackathon
           - privacy-corner
+          - online-summit
       confirmed:
         type: boolean
       tags:
@@ -82,6 +83,8 @@ $defs:
             format: uri
       speakers:
         type: array
+      name-extension:
+        type: string
   person:
     type: object
     additionalProperties: false
