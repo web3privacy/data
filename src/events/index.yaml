@@ -196,6 +196,7 @@
     - ligi
   speakers:
     - afri-schoedon
+    - joshua-davila
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
@@ -264,6 +265,7 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-ljubljana1
   speakers:
+    - joshua-davila
     - mykola-siusko
 
 - id: m24bcn
@@ -275,6 +277,8 @@
   coincidence: "ETHBarcelona"
   slots: 3
   optional: true
+  speakers:
+    - joshua-davila
 
 - id: m24bru
   issue: 16
@@ -291,6 +295,7 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-bru1
   speakers:
+    - joshua-davila
     - mykola-siusko
 
 - id: m24waw
