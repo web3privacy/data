@@ -295,6 +295,7 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-bru1
   speakers:
+    - edward-fricker
     - joshua-davila
     - mykola-siusko
 
@@ -396,3 +397,5 @@
   slots: 5
   links:
     rsvp: https://lu.ma/w3pn-meetup-devcon7
+  speakers:
+    - edward-fricker
