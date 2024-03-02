@@ -303,13 +303,16 @@
 - id: m24waw
   issue: 19
   type: meetup
-  date: "2024/Sep"
+  date: "2024-09-07"
   city: Warsaw
   country: pl
+  # EthWarsaw 2024 - September 5-8, 2024
   coincidence: "ETHWarsaw"
   lead: Tree
   slots: 3
   optional: true
+  links:
+    rsvp: https://lu.ma/w3pn-m24waw
 
 - id: m24cph
   issue: 18
