@@ -4,6 +4,10 @@ on:
       branches:
         - main  # Set a branch to deploy
     pull_request:
+    workflow_run:
+      workflows: ["Synchronize data"]
+      types:
+        - completed
         
 permissions:
   contents: write
