@@ -16,7 +16,7 @@
     - Msiusko
   caption: General DB aggregation focused on ZK for privacy.
   links:
-    web: https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape
+    web: https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape#readme
     docs: https://docs.web3privacy.info/research/zk-solutions
 - issue: 2
   title: Privacy Use-Cases DB
@@ -44,7 +44,11 @@
     - db
   assignees:
     - Msiusko
+  caption: "Hiring snapshot across the market: total vacancies, grades, technical
+    x non-technical positions, hiring scope within specific companies &
+    domains."
   links:
+    web: https://docs.google.com/spreadsheets/d/1dN6bIWyOh01Dl-y1iZh-1TASZxKUefD098BUALcnUb8/edit?usp=sharing
     docs: https://docs.web3privacy.info/research/hiring
 - issue: 5
   title: Privacy Guides
