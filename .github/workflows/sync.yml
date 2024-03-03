@@ -25,7 +25,7 @@ jobs:
       - name: Run synchronization script
         run: make sync
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GH_PROJECTS_SECRET }}
     
       - uses: EndBug/add-and-commit@v9
         with:
