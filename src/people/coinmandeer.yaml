@@ -2,3 +2,4 @@ name: Coinmandeer
 refs:
   twitter: KeenOfCoin
   github: coinmandeer
+  matrix: coinmandeer:matrix.org

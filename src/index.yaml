@@ -16,28 +16,12 @@ links:
   news: https://news.web3privacy.info
   telegram: https://t.me/web3privacynow
   cfp: https://cfp.web3privacy.info
-core-team:
-  - name: Mykola
-    refs:
-      github: msiusko
-      twitter: nicksvyaznoy
-      matrix: k1983:matrix.org
-  - name: Tree
-    refs:
-      github: burningtree
-      bsky: tree.fail
-      email: tree@tree.fail
-      matrix: tree:gwei.cz
-  - name: PG
-    refs:
-      github: EclecticSamurai
-      twitter: PG_CDG
-      matrix: pg_cdg:matrix.org
-  - name: Coinmandeer
-    refs:
-      github: coinmandeer
-      matrix: coinmandeer:matrix.org
-      twitter: KeenOfCoin
+teams:
+  core-team:
+    - mykola-siusko
+    - tree
+    - pg
+    - coinmandeer
 research:
   $load: research
 projects:

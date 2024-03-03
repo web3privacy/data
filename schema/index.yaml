@@ -115,6 +115,10 @@ $defs:
             type: string
           github:
             type: string
+          matrix:
+            type: string
+          email:
+            type: string
       imageUrl:
         type: string
         format: uri
@@ -166,19 +170,14 @@ properties:
     type: string
   links:
     type: object
-  core-team:
-    type: array
-    items:
-      type: object
-      additionalProperties: false
-      required:
-        - name
-      properties:
-        name:
+  teams:
+    type: object
+    additionalProperties: false
+    properties:
+      core-team:
+        type: array
+        items:
           type: string
-        refs:
-          type: object
-
   projects:
     type: array
     items:
