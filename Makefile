@@ -6,6 +6,9 @@ cache:
 build:
 	deno run --allow-all utils/build.js
 
+sync:
+	deno run --allow-all utils/sync.js
+
 test:
 	deno test --allow-all utils/test.js
 

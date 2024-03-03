@@ -38,6 +38,8 @@ core-team:
       github: coinmandeer
       matrix: coinmandeer:matrix.org
       twitter: KeenOfCoin
+research:
+  $load: research
 projects:
   $load: projects
 people:
