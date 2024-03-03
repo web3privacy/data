@@ -111,7 +111,8 @@
   labels: []
   assignees:
     - Msiusko
-  links: {}
+  links:
+    web: https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Privacy%20market%20outlook%20in%20Web3%20by%20Mykola%20Siusko%20(Jan%202023).pdf
 - issue: 13
   title: Privacy use-cases within the Ukrainian-Russian war
   status: live
