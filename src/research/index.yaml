@@ -9,7 +9,7 @@
 - issue: 1
   title: ZK solutions DB
   status: live
-  sort: 0
+  sort: 1
   labels:
     - db
   assignees:
@@ -21,7 +21,7 @@
 - issue: 2
   title: Privacy Use-Cases DB
   status: live
-  sort: 1
+  sort: 3
   labels:
     - db
   assignees:
@@ -33,15 +33,19 @@
 - issue: 3
   title: Pagency Framework
   status: live
-  sort: 3
+  sort: 5
   labels: []
   assignees:
     - Msiusko
-  links: {}
+  caption: Pagency framework for facilitation privacy use-cases (privacy services
+    modelling)
+  links:
+    web: https://github.com/web3privacy/web3privacy/blob/main/Pagency/Pagency%20-%20privacy%20use-case%20facilitation%20framework.pdf
+    docs: https://docs.web3privacy.info/research/pagency
 - issue: 4
   title: Privacy Projects Hiring
   status: live
-  sort: 2
+  sort: 4
   labels:
     - db
   assignees:
@@ -84,7 +88,12 @@
   labels: []
   assignees:
     - Msiusko
-  links: {}
+  caption: Comprehensive privacy-centric research aimed to map Ethereum-centric
+    privacy services, use-cases, product stages, missing areas (use-cases),
+    funding landscape etc Supported by MolochDAO
+  links:
+    web: https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Ethereum%20Ecosystem/Readme.md
+    docs: https://docs.web3privacy.info/research/ethereum-privacy-ecosystem/
 - issue: 9
   title: Privacy use-cases DB 2.0 (major update)
   status: backlog
@@ -111,18 +120,19 @@
     - Msiusko
   links: {}
 - issue: 12
-  title: Privacy market outlook 22'
+  title: Privacy market outlook (2022)
   status: live
-  sort: 4
+  sort: 2
   labels: []
   assignees:
     - Msiusko
+  caption: 150-pages report on the state of privacy x web3 from funding to key projects.
   links:
     web: https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Privacy%20market%20outlook%20in%20Web3%20by%20Mykola%20Siusko%20(Jan%202023).pdf
 - issue: 13
   title: Privacy use-cases within the Ukrainian-Russian war
   status: live
-  sort: 5
+  sort: 6
   labels: []
   assignees:
     - Msiusko
@@ -134,7 +144,11 @@
 - issue: 14
   title: Privacy market DB
   status: live
-  sort: 6
+  sort: 0
   labels: []
   assignees: []
-  links: {}
+  caption: "Privacy services x web3 initial market DB aggregation: segmentation,
+    key links (web, git, docs), ecosystem, product liveliness etc. 600 projects
+    in the DB."
+  links:
+    web: https://github.com/web3privacy/web3privacy?tab=readme-ov-file#contents
