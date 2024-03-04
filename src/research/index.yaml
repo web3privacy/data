@@ -26,7 +26,9 @@
     - db
   assignees:
     - Msiusko
+  caption: Basic DB of the privacy-centric use-cases.
   links:
+    web: https://github.com/Msiusko/web3privacy/blob/main/Use-cases.md
     docs: https://docs.web3privacy.info/research/usecase-db
 - issue: 3
   title: Pagency Framework
@@ -124,7 +126,11 @@
   labels: []
   assignees:
     - Msiusko
-  links: {}
+  caption: Research how privacy tools can protect human rights, vulnerable
+    audiences within the war, migration & cross-border relations. Supported by
+    Zcash Foundation.
+  links:
+    web: https://github.com/web3privacy/grants/blob/main/staticobjects/Privacy%20use%20cases%20with%20the%20focus%20on%20Zcash%20(privacy%20coins)_Siusko.pdf
 - issue: 14
   title: Privacy market DB
   status: live
