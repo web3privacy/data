@@ -146,7 +146,8 @@
   status: live
   sort: 0
   labels: []
-  assignees: []
+  assignees:
+    - Msiusko
   caption: "Privacy services x web3 initial market DB aggregation: segmentation,
     key links (web, git, docs), ecosystem, product liveliness etc. 600 projects
     in the DB."
