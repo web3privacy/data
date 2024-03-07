@@ -5,7 +5,7 @@ import { exists } from "https://deno.land/std@0.213.0/fs/exists.ts";
 const engine = new Engine();
 await engine.init();
 
-const FORMAT = 'webp';
+const FORMAT = 'png';
 
 async function genImage (destFn, url, element) {
 
@@ -20,7 +20,7 @@ async function genImage (destFn, url, element) {
             element,
             format: FORMAT,
             scale: 4,
-            quality: 100,
+            //quality: 100,
         })
     });
 
