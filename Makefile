@@ -9,6 +9,9 @@ build:
 sync:
 	deno run --allow-all utils/sync.js
 
+images:
+	deno run --allow-all utils/images.js
+
 test:
 	deno test --allow-all utils/test.js
 

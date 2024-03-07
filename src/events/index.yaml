@@ -101,6 +101,8 @@
   speakers:
     - odysseas
     - mykola-siusko
+  design:
+    image: athens01
 
 # - id: w3pm-lib1
 #  type: meetup
@@ -153,6 +155,8 @@
   speakers:
     - mykola-siusko
     - gabari
+  design:
+    image: amsterdam01
 
 - id: m24tll
   issue: 10
@@ -167,6 +171,8 @@
   optional: true
   links:
     rsvp: https://lu.ma/w3pn-meetup-tallinn1
+  design:
+    image: tallinn01
 
 - id: m24opo
   issue: 21
@@ -201,6 +207,8 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
     signal: https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A
+  design:
+    image: berlin02
 
 - id: s24prg
   issue: 11
@@ -223,6 +231,8 @@
     - gabari
     - radek-svarz
     - mykola-siusko
+  design:
+    image: summit02
 
 - id: h24ble
   issue: 7
@@ -396,6 +406,8 @@
     - mykola-siusko
     - pg
     - tree
+  design:
+    image: brno01
 
 - id: c24brn
   issue: 24

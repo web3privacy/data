@@ -34,7 +34,7 @@ export class Engine {
     if (await exists(join(dir, "index.yaml"))) {
       const out = await readYamlFile(join(dir, "index.yaml"));
       if (opts.loader === "events") {
-        // check speaker connection
+        // check speaker connection & load event images
         for (const ev of out) {
           if (ev.speakers) {
             for (const spId of ev.speakers) {
@@ -43,6 +43,21 @@ export class Engine {
               }
             }
           }
+          // load events images
+          const year = ev.date.match(/^(\d{4})/)[1];
+          const yearDir = join(dir, '_images', year);
+          if (!await exists(yearDir)) {
+            continue
+          }
+          const images = {}
+          for await (const ie of Deno.readDir(yearDir)) {
+            const [id, ext] = ie.name.split(".");
+            if (id.match(new RegExp(`^${ev.id}-`))) {
+              const imgName = id.split('-').slice(1).join('-')
+              images[imgName] = `https://data.web3privacy.info/img/events/${year}/${id}.${ext}`;
+            }
+          }
+          ev.images = images
         }
       }
       return out;
@@ -55,6 +70,7 @@ export class Engine {
         images.push({ id, ext });
       }
     }
+
     const arr = [];
     for await (const dirEntry of Deno.readDir(dir)) {
       const [fn, ext] = dirEntry.name.split(".");
@@ -107,6 +123,12 @@ export class Engine {
     await copy(
       join(SRC_DIR, "people", "_images"),
       join(DEST_DIR, "img", "people"),
+    );
+
+    // copy event images
+    await copy(
+      join(SRC_DIR, "events", "_images"),
+      join(DEST_DIR, "img", "events"),
     );
 
     await writeJSONFile(
