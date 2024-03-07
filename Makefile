@@ -12,6 +12,9 @@ sync:
 images:
 	deno run --allow-all utils/images.js
 
+img-opt:
+	deno run --allow-all utils/img-opt.js
+
 test:
 	deno test --allow-all utils/test.js
 

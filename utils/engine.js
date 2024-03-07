@@ -58,6 +58,20 @@ export class Engine {
             }
           }
           ev.images = images
+
+          ev.thumbs = {}
+          // scan for thumbnails
+          for await (const ti of Deno.readDir(join(yearDir, "thumbs"))) {
+            const [name, ext] = ti.name.split('.')
+            const split = name.split('-')
+            const thumbKey = split[split.length-1]
+            const imageKey = split[split.length-2]
+            const sid = split.slice(0, split.length-2).join('-')
+            
+            if (ev.id === sid) {
+              ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}.${ext}`
+            }
+          }
         }
       }
       return out;
@@ -93,6 +107,20 @@ export class Engine {
           if (img) {
             item.imageUrl =
               `https://data.web3privacy.info/img/people/${img.id}.${img.ext}`;
+
+            item.thumbs = {}
+
+            // scan for thumbnails
+            for await (const ti of Deno.readDir(join(dir, "_images", "thumbs"))) {
+              const [name, ext] = ti.name.split('.')
+              const split = name.split('-')
+              const thumbKey = split[split.length-1]
+              const sid = split.slice(0, split.length-1).join('-')
+              
+              if (item.id === sid) {
+                item.thumbs[thumbKey.replace('px', '')] = `https://data.web3privacy.info/img/people/thumbs/${img.id}-${thumbKey}.${ext}`
+              }
+            }
           }
         }
         arr.push(item);

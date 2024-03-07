@@ -97,6 +97,8 @@ $defs:
         $ref: "#/$defs/design"
       images:
         type: object
+      thumbs:
+        type: object
   person:
     type: object
     additionalProperties: false
@@ -134,6 +136,8 @@ $defs:
       imageUrl:
         type: string
         format: uri
+      thumbs:
+        type: object
   research:
     type: object
     additionalProperties: false
