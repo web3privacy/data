@@ -72,7 +72,7 @@ export class Engine {
             const thumbKey = match[2]
             const imageKey = match[1]
 
-            ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}.${ext}`
+            ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}px.${ext}`
           }
         }
       }
