@@ -63,14 +63,16 @@ export class Engine {
           // scan for thumbnails
           for await (const ti of Deno.readDir(join(yearDir, "thumbs"))) {
             const [name, ext] = ti.name.split('.')
-            const split = name.split('-')
-            const thumbKey = split[split.length-1]
-            const imageKey = split[split.length-2]
-            const sid = split.slice(0, split.length-2).join('-')
-            
-            if (ev.id === sid) {
-              ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}.${ext}`
+
+            //console.log(name, `^${ev.id}-(.+)-(\\d+)px$`)
+            const match = name.match(new RegExp(`^${ev.id}-([\\w\\d-]+)-(\\d+)px`));
+            if (!match) {
+              continue
             }
+            const thumbKey = match[1]
+            const imageKey = match[2]
+
+            ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}.${ext}`
           }
         }
       }
