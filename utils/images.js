@@ -5,6 +5,8 @@ import { exists } from "https://deno.land/std@0.213.0/fs/exists.ts";
 const engine = new Engine();
 await engine.init();
 
+const FORMAT = 'webp';
+
 async function genImage (destFn, url, element) {
 
     console.log(`Getting ${url} (${element}) (dest=${destFn})`)
@@ -16,8 +18,9 @@ async function genImage (destFn, url, element) {
         body: JSON.stringify({
             url,
             element,
-            format: 'webp',
+            format: FORMAT,
             scale: 4,
+            quality: 100,
         })
     });
 
@@ -46,7 +49,7 @@ for(const event of engine.rendered.events) {
     const design = event.design
     for (const format of eventFormats) {
 
-        const destFn = join(DEST_DIR, year, `${event.id}-${format}.webp`);
+        const destFn = join(DEST_DIR, year, `${event.id}-${format}.${FORMAT}`);
         if (await exists(destFn)) {
             console.log(`${destFn} existing, skipping ..`)
             continue;
