@@ -69,8 +69,8 @@ export class Engine {
             if (!match) {
               continue
             }
-            const thumbKey = match[1]
-            const imageKey = match[2]
+            const thumbKey = match[2]
+            const imageKey = match[1]
 
             ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}.${ext}`
           }
