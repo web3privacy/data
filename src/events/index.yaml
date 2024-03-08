@@ -91,7 +91,7 @@
 - id: m24ath
   issue: 22
   type: meetup
-  date: "2024/Mar"
+  date: "2024/TBD"
   city: Athens
   country: gr
   coincidence: ""
@@ -99,7 +99,6 @@
   optional: true
   slots: 3
   speakers:
-    - odysseas
     - mykola-siusko
   design:
     image: athens01
