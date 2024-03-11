@@ -88,20 +88,20 @@
     - radek-svarz
     - marcel-kolaja
 
-- id: m24ath
-  issue: 22
-  type: meetup
-  date: "2024/TBD"
-  city: Athens
-  country: gr
-  coincidence: ""
-  lead: Mykola
-  optional: true
-  slots: 3
-  speakers:
-    - mykola-siusko
-  design:
-    image: athens01
+#- id: m24ath
+#  issue: 22
+#  type: meetup
+#  date: "2024/TBD"
+#  city: Athens
+#  country: gr
+#  coincidence: ""
+#  lead: Mykola
+#  optional: true
+#  slots: 3
+#  speakers:
+#    - mykola-siusko
+#  design:
+#    image: athens01
 
 # - id: w3pm-lib1
 #  type: meetup
