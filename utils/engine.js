@@ -61,6 +61,9 @@ export class Engine {
 
           ev.thumbs = {}
           // scan for thumbnails
+          if (!await exists(join(yearDir, "thumbs"))) {
+            continue
+          }
           for await (const ti of Deno.readDir(join(yearDir, "thumbs"))) {
             const [name, ext] = ti.name.split('.')
 
