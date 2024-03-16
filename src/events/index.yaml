@@ -247,7 +247,7 @@
   place: "[Subwork](https://subwork.xyz/)"
   place-address: Ljubljanska cesta 4, 4260 Bled
   confirmed: true
-  coincidence: "W3PN Hackathon"
+  coincidence: "W3PN Meta-hackathon"
   lead: Tree
   helpers:
     - PG
@@ -269,7 +269,7 @@
   date: "2024-06-21"
   city: Ljubljana
   country: si
-  coincidence: "W3PN Hackathon"
+  coincidence: "W3PN Meta-hackathon"
   lead: Tree
   helpers:
     - PG
