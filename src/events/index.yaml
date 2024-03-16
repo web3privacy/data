@@ -123,6 +123,8 @@
   coincidence: "[ETHBucharest](https://www.ethbucharest.xyz/)"
   optional: true
   slots: 3
+  design:
+    image: bucharest01
   lead: Tree
   helpers:
     - Alina
@@ -209,7 +211,7 @@
     rsvp: https://lu.ma/w3pn-meetup-berlin1
     signal: https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A
   design:
-    image: berlin02
+    image: berlin03
 
 - id: s24prg
   issue: 11
@@ -301,6 +303,8 @@
   coincidence: "ETHBarcelona"
   slots: 3
   optional: true
+  design:
+    image: barcelona02
   speakers:
     - joshua-davila
 
@@ -313,6 +317,8 @@
   # EthCC 7 - July 8-11, 2024
   coincidence: "[EthCC](https://www.ethcc.io/)"
   slots: 3
+  design:
+    image: brussels01
   lead: Mykola
   helpers:
     - Tree
@@ -334,6 +340,8 @@
   lead: Tree
   slots: 3
   optional: true
+  design:
+    image: warsaw01
   links:
     rsvp: https://lu.ma/w3pn-m24waw
 
@@ -354,6 +362,8 @@
   lead: Tree
   slots: 3
   optional: true
+  design:
+    image: copenhagen02
   helpers:
     - czepluch
   links:
@@ -371,6 +381,8 @@
   coincidence: "ETHRome"
   lead: PG
   slots: 5
+  design:
+    image: rome02
   helpers:
      - Mykola
      - Alina
@@ -437,6 +449,8 @@
   # Devcon 7 - 12-15 Nov, 2024
   coincidence: "[Devcon](https://devcon.org/)"
   slots: 5
+  design:
+    image: bangkok01
   links:
     rsvp: https://lu.ma/w3pn-meetup-devcon7
   speakers:
