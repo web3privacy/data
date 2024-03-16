@@ -31,6 +31,7 @@ const eventTypes = {
   hackathon: { code: "h" },
   "privacy-corner": { code: "c" },
   "online-summit": { code: "os" },
+  'meta-hackathon': { code: "q" },
 };
 const usedIds = [];
 for (const event of engine.rendered.events) {

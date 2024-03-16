@@ -45,6 +45,8 @@ $defs:
           - hackathon
           - privacy-corner
           - online-summit
+          - meta-hackathon
+          - congress
       confirmed:
         type: boolean
       tags:
