@@ -57,7 +57,7 @@ for(const event of engine.rendered.events) {
 
         await genImage(
             destFn,
-            `https://beta.web3privacy.info/gen/event?id=${event.id}&image=${design.image}`,
+            `https://web3privacy.info/gen/event?id=${event.id}&img=${design.image}`,
             `#img-${format}`
         );
     }
