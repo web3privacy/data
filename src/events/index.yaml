@@ -203,6 +203,7 @@
   speakers:
     - afri-schoedon
     - joshua-davila
+    - vaclav-pavlin
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
@@ -228,7 +229,9 @@
     rsvp: https://lu.ma/w3pn-summit-prague2
   speakers:
     - pavol-luptak
+    - jaromil
     - gabari
+    - vaclav-pavlin
     - radek-svarz
     - mykola-siusko
   design:
@@ -356,6 +359,8 @@
   links:
     rsvp: https://lu.ma/w3pn-m24cph
     signal: https://signal.group/#CjQKIPw56w6ZZ7L3I4dZ0BZNzMQu-Ipxe5sfz7XbYK5Smd8gEhCzs8zSMiSZLW2-gbZfqfwD
+  speakers:
+    - jaromil
 
 - id: m24rom
   issue: 13
@@ -372,6 +377,8 @@
   links:
     rsvp: https://lu.ma/w3pn-meetup-rome1
   speakers:
+    - jaromil
+    - vaclav-pavlin
     - mykola-siusko
 
 - id: c24rom
@@ -402,6 +409,8 @@
     rsvp: https://lu.ma/w3pn-summit-brno1
   speakers:
     - juraj-bednar
+    - jaromil
+    - vaclav-pavlin
     - mykola-siusko
     - pg
     - tree
@@ -432,6 +441,7 @@
     rsvp: https://lu.ma/w3pn-meetup-devcon7
   speakers:
     - edward-fricker
+    - vaclav-pavlin
 
 - id: os24q4
   type: online-summit
