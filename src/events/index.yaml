@@ -113,27 +113,28 @@
 #  optional: true
 #  slots: 3
 
-#- id: m24buc
-#  issue: 8
-#  type: meetup
-#  date: "2024-03-28"
-#  city: Bucharest
-#  country: ro
-#  # ETHBucharest 2024 - March 28-30 2024
-#  coincidence: "[ETHBucharest](https://www.ethbucharest.xyz/)"
-#  optional: true
-#  slots: 3
-#  design:
-#    image: bucharest01
-#  helpers:
-#    - Alina
-#  links:
-#    rsvp: https://lu.ma/w3pn-meetup-bucharest1
-#    signal: https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ
-#  speakers:
-#    - tim-bansemer
-#    - mykola-siusko
-#    - gabari
+- id: m24buc
+  issue: 8
+  type: meetup
+  date: "2024-03-28"
+  city: Bucharest
+  country: ro
+  # ETHBucharest 2024 - March 28-30 2024
+  coincidence: "[ETHBucharest](https://www.ethbucharest.xyz/)"
+  optional: true
+  slots: 3
+  lead: Mykola
+  design:
+    image: bucharest01
+  helpers:
+    - Alina
+  links:
+    rsvp: https://lu.ma/w3pn-meetup-bucharest1
+    signal: https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ
+  speakers:
+    - tim-bansemer
+    - mykola-siusko
+    - gabari
 
 - id: m24ams
   issue: 9
@@ -186,29 +187,30 @@
 #  speakers:
 #    - gabari
 
-#- id: m24ber
-#  issue: 6
-#  type: meetup
-#  tags: [ sfe ]
-#  date: "2024-05-22"
-#  city: Berlin
-#  country: de
-#  place: "[c-base](https://c-base.org/)"
-#  place-address: Rungestraße 20, 10179 Berlin
-#  # ETHBerlin 4 - May 24-26, 2024
-#  coincidence: "ETHBerlin"
-#  helpers:
-#    - ligi
-#  speakers:
-#    - afri-schoedon
-#    - joshua-davila
-#    - vaclav-pavlin
-#  slots: 3
-#  links:
-#    rsvp: https://lu.ma/w3pn-meetup-berlin1
-#    signal: https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A
-#  design:
-#    image: berlin03
+- id: m24ber
+  issue: 6
+  type: meetup
+  tags: [ sfe ]
+  date: "2024-05-22"
+  city: Berlin
+  country: de
+  place: "[c-base](https://c-base.org/)"
+  place-address: Rungestraße 20, 10179 Berlin
+  # ETHBerlin 4 - May 24-26, 2024
+  coincidence: "ETHBerlin"
+  lead: Mykola
+  helpers:
+    - ligi
+  speakers:
+    - afri-schoedon
+    - joshua-davila
+    - vaclav-pavlin
+  slots: 3
+  links:
+    rsvp: https://lu.ma/w3pn-meetup-berlin1
+    signal: https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A
+  design:
+    image: berlin03
 
 - id: s24prg
   issue: 11
