@@ -142,6 +142,8 @@
   date: "2024-04-11"
   city: Amsterdam
   country: nl
+  place: "[Vrij Paleis](https://www.vrijpaleis.nl/)"
+  place-address: Paleisstraat 107, 1012 ZL Amsterdam, Paesi Bassi
   lead: PG
   helpers:
     - Mykola
@@ -154,8 +156,9 @@
     signal: https://signal.group/#CjQKIEZbdyGk2CnVLXJ4u87cdRPPE2W4crwz7U-Tt1AFHsu2EhCxC25OkPV47uoTrNa2dww6
   speakers:
     - kieran-mesquita
-    - mykola-siusko
-    - gabari
+    - Moritz-Boullenger
+    - Sterlin-Lujan
+    - PG_CDG
   design:
     image: amsterdam01
 
