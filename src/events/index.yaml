@@ -135,6 +135,7 @@
     - tim-bansemer
     - mykola-siusko
     - gabari
+    - kieran-mesquita
 
 - id: m24ams
   issue: 9
@@ -159,6 +160,7 @@
     - Moritz-Boullenger
     - Sterlin-Lujan
     - PG_CDG
+    - serinko
   design:
     image: amsterdam01
 
@@ -238,6 +240,10 @@
     - gabari
     - vaclav-pavlin
     - radek-svarz
+    - mykola-siusko
+    - andreas-tsamados
+    - serinko
+    - sebastian-burgel
     - mykola-siusko
   design:
     image: prague01
