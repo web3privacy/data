@@ -157,9 +157,9 @@
     signal: https://signal.group/#CjQKIEZbdyGk2CnVLXJ4u87cdRPPE2W4crwz7U-Tt1AFHsu2EhCxC25OkPV47uoTrNa2dww6
   speakers:
     - kieran-mesquita
-    - Moritz-Boullenger
-    - Sterlin-Lujan
-    - PG_CDG
+    #- Moritz-Boullenger
+    #- Sterlin-Lujan
+    - pg
     - serinko
   design:
     image: amsterdam01
