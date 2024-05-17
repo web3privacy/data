@@ -1,18 +1,18 @@
 - id: s23prg
   type: summit
-  date: "2023-06-05"
+  date: "2023-05-30"
   city: Prague
   country: cz
-  place: "[X10](https://www.divadlox10.cz/)"
-  place-address: Charvátova 39/10, 11000 Prague 1
+  place: "[Paralelní Polis](https://www.paralelnipolis.cz/)"
+  place-address: 475/43, Dělnická, 170 00 Praha 7
   confirmed: true
   coincidence: "[ETHPrague](https://ethprague.com/)"
-  lead: Tree
+  lead: Mykola
   slots: 16
   visitors: 180
   links:
-    web: https://prague.web3privacy.info/
-    git: https://github.com/web3privacy/w3ps1
+    web: https://summit.web3privacy.info/
+    git: https://github.com/web3privacy/events_web
   speakers:
     - ameen-soleimani
     - guy-zyskind
