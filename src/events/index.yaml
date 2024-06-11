@@ -124,6 +124,7 @@
   optional: true
   slots: 3
   lead: Mykola
+  visitors: 80
   design:
     image: bucharest01
   helpers:
@@ -146,6 +147,7 @@
   place: "[Vrij Paleis](https://www.vrijpaleis.nl/)"
   place-address: Paleisstraat 107, 1012 ZL Amsterdam, Paesi Bassi
   lead: PG
+  visitors: 90
   helpers:
     - Mykola
     - Alina
@@ -204,6 +206,7 @@
   # ETHBerlin 4 - May 24-26, 2024
   coincidence: "ETHBerlin"
   lead: Mykola
+  visitors: 150
   helpers:
     - ligi
   speakers:
@@ -232,6 +235,7 @@
     - Mykola
     - Coinmandeer
     - Robert
+  visitors: 210
   links:
     web: https://c24ber.web3privacy.info/
   design:
@@ -246,6 +250,7 @@
   # ETHPrague 2024 - May 31-June 2 2024
   coincidence: "ETHPrague"
   lead: PG
+  visitors: 180
   helpers:
     - PG
     - Mykola
