@@ -1,3 +1,51 @@
+- id: c24bkk
+  type: congress
+  date: "2024-11-11"
+  city: Bangkok
+  country: th
+  place: "[TBA](https://congress.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[DevCon](https://devcon.org)"
+  lead: Mykola
+  slots: 16
+  visitors: 300
+  links:
+    web: https://congress.web3privacy.info/
+    git: https://github.com/web3privacy/c24bkk
+  speakers:
+    - ameen-soleimani
+    - scott-moore
+    - silke-noa
+    - kurt-opsahl
+    - nick-almond
+    - jarrad-hope
+    - adrian-brink
+    - tsu-kareta
+    - andreas-miroyato
+    - ahmed-ghappour
+    - alex-gluchowski
+    - amit-chaudhary
+    - ann-brody
+    - claire-kart
+    - costanza-gallo
+    - daniel-luca
+    - lefteris-karapetsas
+    - lasha-antatze
+    - auryn-macmillan
+    - bob-summerwill
+    - manu-alzuru
+    - dapplion
+    - kris
+    - hsinju-chuang
+    - michelle-lai
+    - ying-tong
+    - remi-gai
+    - pie-man
+    - oskarth
+    - nate
+    - gavin-birch
+
 - id: s23prg
   type: summit
   date: "2023-06-05"

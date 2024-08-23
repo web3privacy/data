@@ -15,8 +15,5 @@ images:
 img-opt:
 	deno run --allow-all utils/img-opt.js
 
-test:
-	deno test --allow-all utils/test.js
-
 fmt:
 	deno fmt utils/*.js
