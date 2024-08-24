@@ -1,8 +1,8 @@
-import { join } from "https://deno.land/std@0.208.0/path/mod.ts";
-import { emptyDir } from "https://deno.land/std@0.196.0/fs/empty_dir.ts";
+import { join } from "https://deno.land/std@0.224.0/path/mod.ts";
+import { emptyDir } from "https://deno.land/std@0.224.0/fs/empty_dir.ts";
 import { parse, stringify } from "npm:yaml";
-import { exists } from "https://deno.land/std@0.213.0/fs/exists.ts";
-import { copy } from "https://deno.land/std@0.214.0/fs/copy.ts";
+import { exists } from "https://deno.land/std@0.224.0/fs/exists.ts";
+import { copy } from "https://deno.land/std@0.224.0/fs/copy.ts";
 
 const SRC_DIR = "./src";
 const DEST_DIR = "./dist";

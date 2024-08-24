@@ -1,5 +1,5 @@
-import Ajv from "npm:ajv@8.8.2";
-import addFormats from "npm:ajv-formats@2.1.1";
+import Ajv from "npm:ajv@8.17.1";
+import addFormats from "npm:ajv-formats@3.O.1";
 
 import { Engine } from "./engine.js";
 
@@ -29,9 +29,11 @@ const eventTypes = {
   summit: { code: "s" },
   meetup: { code: "m" },
   hackathon: { code: "h" },
-  "privacy-corner": { code: "c" },
+  congress: { code: "c" },
+  "privacy-corner": { code: "pc" },
   "online-summit": { code: "os" },
-  'meta-hackathon': { code: "q" },
+  "meta-hackathon": { code: "mh" },
+  
 };
 const usedIds = [];
 for (const event of engine.rendered.events) {
