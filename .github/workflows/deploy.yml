@@ -46,7 +46,7 @@ jobs:
         run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
     
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: ./dist
 
