@@ -1,6 +1,6 @@
 import { run } from "https://deno.land/x/run_simple/mod.ts";
-import { join } from "https://deno.land/std@0.208.0/path/mod.ts";
-import { emptyDir } from "https://deno.land/std@0.196.0/fs/empty_dir.ts";
+import { join } from "https://deno.land/std@0.224.0/path/mod.ts";
+import { emptyDir } from "https://deno.land/std@0.224.0/fs/empty_dir.ts";
 
 async function optimizeDir (dir, sizes) {
     await emptyDir(join(dir, 'thumbs'))
