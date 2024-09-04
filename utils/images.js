@@ -1,6 +1,6 @@
 import { Engine } from "./engine.js";
-import { join } from "https://deno.land/std@0.208.0/path/mod.ts";
-import { exists } from "https://deno.land/std@0.213.0/fs/exists.ts";
+import { join } from "https://deno.land/std@0.224.0/path/mod.ts";
+import { exists } from "https://deno.land/std@0.224.0/fs/exists.ts";
 
 const engine = new Engine();
 await engine.init();

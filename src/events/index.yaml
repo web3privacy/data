@@ -3,6 +3,7 @@
   date: "2024-11-11"
   city: Bangkok
   country: th
+  # DevCon 2024 - November 12-15 2024
   place: "[TBA](https://congress.web3privacy.info)"
   place-address: TBA
   confirmed: true
@@ -315,5 +316,8 @@
     rsvp: https://lu.ma/w3pn-meetup-rome1
   speakers:
     - jaromil
-    - vaclav-pavlin
-    - mykola-siusko
+    - arturo-filasto
+    - luca-lezzerini
+    - andrea-togni
+    - emanuele-russo
+    - marco-castignoli
