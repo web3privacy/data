@@ -22,7 +22,7 @@ async function syncResearch () {
         'Backlog': 'backlog',
     }
 
-    const client = GraphQLClient("https://api.github.com/graphql", {
+    const client = new GraphQLClient("https://api.github.com/graphql", {
         headers: {
             authorization: `bearer ${Deno.env.get('GITHUB_TOKEN')}`,
         },
