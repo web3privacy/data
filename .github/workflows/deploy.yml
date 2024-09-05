@@ -11,6 +11,9 @@ on:
     workflows: ["Synchronize data"]
     types:
       - completed
+    workflows: ["Upload GitHub Pages artifact"]
+    types:
+      - completed
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
