@@ -11,7 +11,7 @@ on:
     workflows: ["Synchronize data"]
     types:
       - completed
-
+      
 # Allow this job to clone the repo and create a page deployment
 permissions:
   actions: read
@@ -20,6 +20,17 @@ permissions:
   id-token: write
 
 jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Creating artifact placeholder file
+        run: echo "this is a placeholder file" > artifact.txt
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: artifact.txt
+          
   build:
     runs-on: ubuntu-latest
     steps:
@@ -48,11 +59,15 @@ jobs:
           
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
