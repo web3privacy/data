@@ -14,6 +14,7 @@ on:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -44,12 +45,7 @@ jobs:
 
       - name: Add custom domain
         run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
-    
-      - name: Upload Pages artifact
-        uses: actions/upload-artifact@v4
-        with:
-          path: ./dist
-
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
