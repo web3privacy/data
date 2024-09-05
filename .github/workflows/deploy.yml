@@ -14,8 +14,8 @@ on:
       
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  actions: read
-  contents: read
+  actions: write
+  contents: write
   pages: write
   id-token: write
 
@@ -60,6 +60,7 @@ jobs:
   deploy:
     needs: build
     permissions:
+      actions: write
       contents: read
       pages: write
       id-token: write
@@ -70,4 +71,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+        uses: actions/deploy-pages@v4
