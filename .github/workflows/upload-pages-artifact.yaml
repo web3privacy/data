@@ -13,7 +13,7 @@ inputs:
   retention-days:
     description: "Duration after which artifact will expire in days."
     required: false
-    default: "1"
+    default: "10"
 outputs:
   artifact_id:
     description: "The ID of the artifact that was uploaded."
