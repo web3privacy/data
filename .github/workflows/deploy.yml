@@ -28,7 +28,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: w3pn-artifact
+          name: github-pages
           path: artifact.txt
           
   build:
