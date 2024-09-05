@@ -63,7 +63,7 @@ $defs:
         type: string
       country:
         type: string
-        pattern: "^\\w{2}$"
+        pattern: "^[a-z]{2}$"
       place:
         type: string
       place-address:
@@ -118,7 +118,7 @@ $defs:
         type: string
       country:
         type: string
-        pattern: '^[a-z]{2}$'
+        pattern: "^[a-z]{2}$"
       refs:
         type: object
         additionalProperties: false
