@@ -45,15 +45,6 @@ jobs:
 
       - name: Add custom domain
         run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
-    
-      - name: Upload Pages artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: W3PN-artifact
-          path: ~/pre-deploy-artifact-upload/
-          if-no-files-found: warn
-          retention-days: 80
-          overwrite: true
           
   deploy:
     needs: build
