@@ -8,7 +8,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
   workflow_run:
-    workflows: ["Synchronize data"] ["Upload GitHub Pages artifact"]
+    workflows: ["Synchronize data"]
     types:
       - completed
       
