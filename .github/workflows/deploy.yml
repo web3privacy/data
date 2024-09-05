@@ -1,18 +1,14 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
   workflow_run:
     workflows: ["Synchronize data"]
     types:
       - completed
       
-# Allow this job to clone the repo and create a page deployment
 permissions:
   actions: write
   contents: write
@@ -36,24 +32,18 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-        
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-
       - uses: szenius/set-timezone@v2.0
         with:
           timezoneLinux: "Europe/Prague"
-
       - name: Cache
         run: make cache
-
       - name: Test
         run: make test
-
       - name: Build bundle
         run: make build
-
       - name: Add custom domain
         run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
           
@@ -69,6 +59,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
