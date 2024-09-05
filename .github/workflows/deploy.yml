@@ -14,6 +14,7 @@ on:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -48,15 +49,19 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./dist
-
+          name: W3PN-artifact
+          path: ~/pre-deploy-artifact-upload/
+          if-no-files-found: warn
+          retention-days: 80
+          overwrite: true
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+      steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
