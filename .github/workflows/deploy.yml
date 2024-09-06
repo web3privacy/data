@@ -35,6 +35,9 @@ jobs:
         run: make build
       - name: Add custom domain
         run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+            
           
   deploy:
     needs: build
