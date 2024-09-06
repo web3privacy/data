@@ -37,7 +37,7 @@ jobs:
         run: "touch dist/CNAME && echo \"data.web3privacy.info\" >> dist/CNAME"
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
-          path: ./dist/
+          path: './dist/'
              
   deploy:
     needs: build
