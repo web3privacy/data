@@ -1,6 +1,6 @@
-import { run } from "jsr:@std/path@0.224.0/mod.ts";
-import { join } from "jsr:@std/path@0.224.0/path/mod.ts";
-import { emptyDir } from "jsr:@std/path@0.224.0/fs/empty_dir.ts";
+import { run } from "jsr:@std/path@0.224.0";
+import { join } from "jsr:@std/path@0.224.0";
+import { emptyDir } from "jsr:@std/fs@0.224.0";
 
 async function optimizeDir (dir, sizes) {
     await emptyDir(join(dir, 'thumbs'))
