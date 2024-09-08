@@ -25,9 +25,7 @@ jobs:
 
       - name: Install cwebp
         shell: bash
-        run: |
-        sudo apt-get install -y webp
-        cwebp -version
+        run: cwebp
         
       - name: Run image optimisation script
         run: make img-opt
