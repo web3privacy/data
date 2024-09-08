@@ -25,8 +25,6 @@ jobs:
 
       - name: Run image optimisation script
         run: make img-opt
-        env:
-            GITHUB_TOKEN: ${{ secrets.GH_PROJECTS_SECRET }}
     
       - uses: EndBug/add-and-commit@v9
         with:
