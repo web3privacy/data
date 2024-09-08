@@ -1,4 +1,4 @@
-import { run } from "jsr:@std/path@0.224.0";
+import { run } from "https://deno.land/x/run_simple@2.3.0/mod.ts";
 import { join } from "jsr:@std/path@0.224.0";
 import { emptyDir } from "jsr:@std/fs@0.224.0";
 
