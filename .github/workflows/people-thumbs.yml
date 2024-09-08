@@ -25,7 +25,7 @@ jobs:
 
       - name: Install cwebp
         shell: bash
-        run: cwebp
+        run:  npm install cwebp
         
       - name: Run image optimisation script
         run: make img-opt
