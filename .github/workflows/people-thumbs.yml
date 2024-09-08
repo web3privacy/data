@@ -1,0 +1,33 @@
+name: Generate people thumbnails
+# This file manages the workflow from generating the .webp thumbnails for deployment from files in /src/people/_images
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+  pages: write
+  actions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v1
+        with:
+            deno-version: v1.x
+
+      - name: Run image optimisation script
+        run: make img-opt
+        env:
+            GITHUB_TOKEN: ${{ secrets.GH_PROJECTS_SECRET }}
+    
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
