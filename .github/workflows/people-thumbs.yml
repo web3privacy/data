@@ -23,6 +23,12 @@ jobs:
         with:
             deno-version: v1.x
 
+      - name: Install cwebp
+        shell: bash
+        run: |
+        sudo apt-get install -y webp
+        cwebp -version
+        
       - name: Run image optimisation script
         run: make img-opt
     
