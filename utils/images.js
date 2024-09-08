@@ -1,6 +1,6 @@
 import { Engine } from "./engine.js";
-import { join } from "jsr:@std/path@0.224.0/path/mod.ts";
-import { exists } from "jsr:@std/path@0.224.0/fs/exists.ts";
+import { join } from "jsr:@std/path@0.224.0";
+import { exists } from "jsr:@std/fs@0.224.0";
 
 const engine = new Engine();
 await engine.init();
