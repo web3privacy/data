@@ -1,0 +1,46 @@
+name: Generate people thumbnails
+# This file manages the workflow from generating the .webp thumbnails for deployment from files in /src/people/_images
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+  pages: write
+  actions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v1
+        with:
+            deno-version: v1.x
+
+      - name: Install cwebp
+        shell: bash
+        run: |
+          pwd
+          sudo apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev
+          wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.4-linux-x86-64.tar.gz
+          tar xzvf libwebp-1.2.4-linux-x86-64.tar.gz
+          cd libwebp-1.2.4-linux-x86-64/bin
+          mv cwebp ${{ github.workspace }}
+          cd ../..
+          rm -rf libwebp-1.2.4-linux-x86-64
+          rm -rf libwebp-1.2.4-linux-x86-64.tar.gz
+          sudo mv cwebp /bin
+          ls
+        
+      - name: Run image optimisation script
+        run: make img-opt
+    
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
