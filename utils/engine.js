@@ -1,8 +1,8 @@
-import { join } from "jsr:@std/path@0.224.0/path/mod.ts";
-import { emptyDir } from "jsr:@std/path@0.224.0/fs/empty_dir.ts";
+import { join } from "jsr:@std/path@0.224.0";
+import { emptyDir } from "jsr:@std/path@0.224.0";
 import { parse, stringify } from "npm:yaml";
-import { exists } from "jsr:@std/path@0.224.0/fs/exists.ts";
-import { copy } from "jsr:@std/path@0.224.0/fs/copy.ts";
+import { exists } from "jsr:@std/fs@0.224.0";
+import { copy } from "jsr:@std/fs@0.224.0";
 
 const SRC_DIR = "./src";
 const DEST_DIR = "./dist";
