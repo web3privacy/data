@@ -2,8 +2,8 @@ name: Generate people thumbnails
 # This file manages the workflow from generating the .webp thumbnails for deployment from files in /src/people/_images
 
 on:
-  push:
-    branches: [ main ]
+  schedule:
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 permissions:
