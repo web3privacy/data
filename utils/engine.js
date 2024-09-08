@@ -1,5 +1,5 @@
 import { join } from "jsr:@std/path@0.224.0";
-import { emptyDir } from "jsr:@std/path@0.224.0";
+import { emptyDir } from "jsr:@std/fs@0.224.0";
 import { parse, stringify } from "npm:yaml";
 import { exists } from "jsr:@std/fs@0.224.0";
 import { copy } from "jsr:@std/fs@0.224.0";
