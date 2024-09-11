@@ -1,7 +1,7 @@
-import "https://deno.land/std@0.224.0/dotenv/load.ts";
-import { gql, GraphQLClient } from "https://deno.land/x/graphql_request/mod.ts";
+import "jsr:@std/dotenv@0.224.0";
+import { gql, GraphQLClient } from "https://deno.land/x/graphql_request@v4.1.0/mod.ts";
 import { stringify } from "npm:yaml";
-import { join } from "https://deno.land/std@0.224.0/path/mod.ts";
+import { join } from "jsr:@std/path@0.224.0";
 import fm from "npm:front-matter";
 
 const warningGen = (link) => `# ----
