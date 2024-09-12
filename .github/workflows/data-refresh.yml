@@ -22,14 +22,33 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+        
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+          
       - uses: szenius/set-timezone@v2.0
         with:
           timezoneLinux: "Europe/Prague"
+
+      - name: Install cwebp
+        shell: bash
+        run: |
+          pwd
+          sudo apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev
+          wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.4-linux-x86-64.tar.gz
+          tar xzvf libwebp-1.2.4-linux-x86-64.tar.gz
+          cd libwebp-1.2.4-linux-x86-64/bin
+          mv cwebp ${{ github.workspace }}
+          cd ../..
+          rm -rf libwebp-1.2.4-linux-x86-64
+          rm -rf libwebp-1.2.4-linux-x86-64.tar.gz
+          sudo mv cwebp /bin
+          ls
+        
       - name: Run all MAKEFILE jobs
         run: make refresh
+        
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
