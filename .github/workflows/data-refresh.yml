@@ -1,4 +1,4 @@
-name: Full data refresh
+name: data refresh
 # This file manages the workflow for running all processes within the MAKEFILE, to refresh the codebase.
 
 on:
@@ -45,11 +45,13 @@ jobs:
           rm -rf libwebp-1.2.4-linux-x86-64.tar.gz
           sudo mv cwebp /bin
           ls
+        # cwebp is required by img-opt to manipulate images, script fails without this pre-requisite install
         
-      - name: Run all MAKEFILE jobs
+      - name: run refresh script
         run: make refresh
-        
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        # 	executes 'deno run' on utils/engine.js /images.js /img-opt.js and /test.js
+      
+      - uses: EndBug/add-and-commit@v9
         with:
-          path: ./dist
+          default_author: github_actions
+          message: 'data refresh script has been executed on /data'
