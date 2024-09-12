@@ -235,7 +235,7 @@
   links:
     web: https://c24ber.web3privacy.info/
   design:
-    image: berlin01
+    image: berlin01 [fixed]
 
 - id: s24prg
   issue: 11
