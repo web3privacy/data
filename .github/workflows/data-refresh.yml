@@ -1,5 +1,5 @@
-name: data refresh
-# This file manages the workflow for running all processes within the MAKEFILE, to refresh the codebase.
+name: W3PN data refresh
+# This file manages the workflow for update scripts wthin the MAKEFILE, run to refresh the codebase.
 
 on:
   schedule:
