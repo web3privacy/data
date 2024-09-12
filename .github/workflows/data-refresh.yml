@@ -1,0 +1,38 @@
+name: Full data refresh
+# This file manages the workflow for running all processes within the MAKEFILE, to refresh the codebase.
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_run:
+    workflows: ["Synchronize data"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+  pages: write
+  actions: write
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "Europe/Prague"
+      - name: Run all MAKEFILE jobs
+        run: make all
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: ./dist
+        with:
+          default_author: github_actions
