@@ -34,5 +34,3 @@ jobs:
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./dist
-        with:
-          default_author: github_actions
