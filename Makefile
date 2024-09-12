@@ -22,4 +22,4 @@ fmt:
 	deno fmt utils/*.js
 
 refresh:
-	deno run --allow-all utils/engine.js ; deno run --allow-all utils/images.js ; deno run --allow-all utils/img-opt.js ; deno run --allow-all utils/test.js ; deno run --allow-all utils/sync.js ; deno run --allow-all utils/build.js
+	deno run --allow-all utils/engine.js ; deno run --allow-all utils/images.js ; deno run --allow-all utils/img-opt.js ; deno run --allow-all utils/test.js
