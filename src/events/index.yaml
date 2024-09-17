@@ -1,3 +1,7 @@
+# 2025 EVENTS
+
+# 2024 EVENTS
+
 - id: c24bkk
   type: congress
   date: "2024-11-11"
@@ -40,97 +44,6 @@
     - hsinju-chuang
     - michelle-lai
     - ying-tong
-
-
-- id: s23prg
-  type: summit
-  date: "2023-06-05"
-  city: Prague
-  country: cz
-  place: "[X10](https://www.divadlox10.cz/)"
-  place-address: Charvátova 39/10, 11000 Prague 1
-  confirmed: true
-  coincidence: "[ETHPrague](https://ethprague.com/)"
-  lead: Tree
-  slots: 16
-  visitors: 180
-  links:
-    web: https://prague.web3privacy.info/
-    git: https://github.com/web3privacy/w3ps1
-  speakers:
-    - ameen-soleimani
-    - guy-zyskind
-    - max-hampshire
-    - antoni-zolciak
-    - rachel-rose-oleary
-    - alex-kampa
-    - oliver-gale
-    - mario-havel
-    - costanza-gallo 
-    - manu-alzuru
-    - nick-almond
-    - juraj-bednar
-    - dcbuilder
-    - alona-shevchenko
-    - tibor-csoka
-    - merula
-    - serinko
-    - steffen-kux
-    - althea
-    - mykola-siusko
-    - pg
-    - tree
-
-- id: s23rom
-  type: summit
-  date: "2023-10-05"
-  city: Rome
-  country: it
-  place: "[Villaggio Globale](https://maps.app.goo.gl/S7kUruNvbpjgHuSh9)"
-  place-address: Largo Dino Frisullo, 00153 Roma RM
-  confirmed: true
-  coincidence: "[ETHRome](https://ethrome.org/)"
-  lead: PG
-  slots: 10
-  visitors: 139
-  links:
-    web: https://lu.ma/web3privacynow_rome
-  speakers:
-    - eleanore-blanc
-    - rik-krieger
-    - vincenzo-iovino
-    - alan-scott
-    - kieran-mesquita
-    - andrea-togni
-    - jaromil
-    - serinko
-    - vaclav-pavlin
-    - alex-zaidelson
-    - r-prokh
-    - carlo-chialastri
-    - limone-eth
-    - costanza-gallo
-    - pg
-    - catsnaks
-
-- id: m23prg
-  type: meetup
-  date: "2023-11-14"
-  city: Prague
-  country: cz
-  place: "[Dílna](https://kafevdilne.cz/)"
-  place-address: Smíchovská náplavka - Kobka č. 10, Hořejší nábřeží, Praha 5
-  confirmed: true
-  coincidence: "[DCxPrague](https://dcxprague.org/)"
-  lead: Tree
-  slots: 3
-  visitors: 15
-  links:
-    web: https://lu.ma/w3pm-prg1
-  speakers:
-    - vaclav-pavlin
-    - radek-svarz
-    - marcel-kolaja
 
 - id: m24buc
   issue: 8
@@ -311,3 +224,298 @@
     - andrea-togni
     - emanuele-russo
     - marco-castignoli
+
+
+    
+- id: s23prg
+  type: summit
+  date: "2023-06-05"
+  city: Prague
+  country: cz
+  place: "[X10](https://www.divadlox10.cz/)"
+  place-address: Charvátova 39/10, 11000 Prague 1
+  confirmed: true
+  coincidence: "[ETHPrague](https://ethprague.com/)"
+  lead: Tree
+  slots: 16
+  visitors: 180
+  links:
+    web: https://prague.web3privacy.info/
+    git: https://github.com/web3privacy/w3ps1
+  speakers:
+    - ameen-soleimani
+    - guy-zyskind
+    - max-hampshire
+    - antoni-zolciak
+    - rachel-rose-oleary
+    - alex-kampa
+    - oliver-gale
+    - mario-havel
+    - costanza-gallo 
+    - manu-alzuru
+    - nick-almond
+    - juraj-bednar
+    - dcbuilder
+    - alona-shevchenko
+    - tibor-csoka
+    - merula
+    - serinko
+    - steffen-kux
+    - althea
+    - mykola-siusko
+    - pg
+    - tree
+
+- id: s23rom
+  type: summit
+  date: "2023-10-05"
+  city: Rome
+  country: it
+  place: "[Villaggio Globale](https://maps.app.goo.gl/S7kUruNvbpjgHuSh9)"
+  place-address: Largo Dino Frisullo, 00153 Roma RM
+  confirmed: true
+  coincidence: "[ETHRome](https://ethrome.org/)"
+  lead: PG
+  slots: 10
+  visitors: 139
+  links:
+    web: https://lu.ma/web3privacynow_rome
+  speakers:
+    - eleanore-blanc
+    - rik-krieger
+    - vincenzo-iovino
+    - alan-scott
+    - kieran-mesquita
+    - andrea-togni
+    - jaromil
+    - serinko
+    - vaclav-pavlin
+    - alex-zaidelson
+    - r-prokh
+    - carlo-chialastri
+    - limone-eth
+    - costanza-gallo
+    - pg
+    - catsnaks
+
+# 2023 EVENTS
+
+- id: m23prg
+  type: meetup
+  date: "2023-11-14"
+  city: Prague
+  country: cz
+  place: "[Dílna](https://kafevdilne.cz/)"
+  place-address: Smíchovská náplavka - Kobka č. 10, Hořejší nábřeží, Praha 5
+  confirmed: true
+  coincidence: "[DCxPrague](https://dcxprague.org/)"
+  lead: Tree
+  slots: 3
+  visitors: 15
+  links:
+    web: https://lu.ma/w3pm-prg1
+  speakers:
+    - vaclav-pavlin
+    - radek-svarz
+    - marcel-kolaja
+
+# ARCHIVE EVENTS TO CONFIRM
+
+#- id: m24ath
+#  issue: 22
+#  type: meetup
+#  date: "2024/TBD"
+#  city: Athens
+#  country: gr
+#  coincidence: ""
+#  lead: Mykola
+#  optional: true
+#  slots: 3
+#  speakers:
+#    - mykola-siusko
+#  design:
+#    image: athens01
+
+# - id: w3pm-lib1
+#  type: meetup
+#  date: "2024/Mar"
+#  city: Liberec
+#  country: cz
+#  coincidence: "[ETHBohemia](https://ethbohemia.ethevents.club/)"
+#  lead: Tree
+#  optional: true
+#  slots: 3
+
+#- id: m24tll
+#  issue: 10
+#  type: meetup
+#  date: "2024-04-18"
+#  city: Tallinn
+#  country: ee
+#  lead: Tree
+#  # ETHTallinn - April 19 - 21, 2024
+#  coincidence: "[ETHTallinn](https://www.ethtallinn.org/)"
+#  slots: 3
+#  optional: true
+#  links:
+#    rsvp: https://lu.ma/w3pn-meetup-tallinn1
+#  design:
+#    image: tallinn01
+
+#- id: q24ble
+#  issue: 7
+#  type: meta-hackathon
+#  date: "2024-06-19"
+#  days: 7
+#  city: Bled
+#  country: si
+#  place: "[Subwork](https://subwork.xyz/)"
+#  place-address: Ljubljanska cesta 4, 4260 Bled
+#  confirmed: true
+#  coincidence: "W3PN Meta-hackathon"
+#  helpers:
+#    - PG
+#    - Mykola
+#    - Coinmandeer
+#  slots: 10
+#  links:
+#    rsvp: https://lu.ma/w3pn-bled-hackathon1
+#  speakers:
+#    - vaclav-pavlin
+#    - afri-schoedon
+#    - mykola-siusko
+#    - pg
+
+#- id: m24lju
+#  issue: 12
+#  type: meetup
+#  date: "2024-06-21"
+#  city: Ljubljana
+#  country: si
+#  coincidence: "W3PN Meta-hackathon"
+#  helpers:
+#    - PG
+#    - Mykola
+#    - Coinmandeer
+#  slots: 5
+#  links:
+#    rsvp: https://lu.ma/w3pn-meetup-ljubljana1
+#  speakers:
+#    - joshua-davila
+#    - mykola-siusko
+
+#- id: os24q2
+#  issue: 28
+#  type: online-summit
+#  name-extension: Q2
+#  date: "2024-06-23"
+#  lead: Tree
+#  slots: 8
+#  links:
+#    rsvp: https://lu.ma/w3pn-os24q2
+
+#- id: m24bcn
+#  issue: 20
+#  type: meetup
+#  date: "2024/Jul"
+#  city: Barcelona
+#  country: es
+#  coincidence: "ETHBarcelona"
+#  slots: 3
+#  optional: true
+#  design:
+#    image: barcelona02
+#  speakers:
+#    - joshua-davila
+
+#- id: m24waw
+#  issue: 19
+#  type: meetup
+#  date: "2024-09-07"
+#  city: Warsaw
+#  country: pl
+#  # EthWarsaw 2024 - September 5-8, 2024
+#  coincidence: "ETHWarsaw"
+#  lead: Tree
+#  slots: 3
+#  optional: true
+#  design:
+#    image: warsaw01
+#  links:
+#    rsvp: https://lu.ma/w3pn-m24waw
+
+#- id: os24q3
+#  type: online-summit
+#  name-extension: Q3
+#  date: "2024/Sep"
+#  lead: Tree
+#  slots: 8
+
+#- id: m24cph
+#  issue: 18
+#  type: meetup
+#  date: "2024-09-19"
+#  city: Copenhagen
+#  country: dk
+#  coincidence: ""
+#  lead: Tree
+#  slots: 3
+#  optional: true
+#  design:
+#    image: copenhagen02
+#  helpers:
+#    - czepluch
+#  links:
+#    rsvp: https://lu.ma/w3pn-m24cph
+#    signal: https://signal.group/#CjQKIPw56w6ZZ7L3I4dZ0BZNzMQu-Ipxe5sfz7XbYK5Smd8gEhCzs8zSMiSZLW2-gbZfqfwD
+#  speakers:
+#    - jaromil
+
+#- id: c24rom
+#  issue: 23
+#  type: privacy-corner
+#  date: "2024-10-04"
+#  days: 3
+#  city: Rome
+#  country: it
+#  coincidence: ETHRome
+#  coincidenceFull: ETHRome 2024
+#  lead: Tree
+
+#- id: s24brn
+#  issue: 14
+#  type: summit
+#  date: "2024-10-24"
+#  city: Brno
+#  country: cz
+#  coincidence: "ETHBrno"
+#  lead: Tree
+#  helpers:
+#    - PG
+#    - Mykola
+#    - Coinmandeer
+#  slots: 16
+#  links:
+#    rsvp: https://lu.ma/w3pn-summit-brno1
+#  speakers:
+#    - juraj-bednar
+#    - jaromil
+#    - vaclav-pavlin
+#    - mykola-siusko
+#    - pg
+#  design:
+#    image: brno01
+
+#- id: c24brn
+#  issue: 24
+#  type: privacy-corner
+#  date: "2024-10-25"
+#  days: 3
+#  city: Brno
+#  country: cz
+#  coincidence: ETHBrno
+#  coincidenceFull: ETHBrno3
+#  lead: Tree
+
+
+
