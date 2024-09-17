@@ -13,6 +13,7 @@
   confirmed: true
   coincidence: "[DevCon](https://devcon.org)"
   lead: Mykola
+  slots: 16
   visitors: 300
   links:
     rsvp: https://lu.ma/w3pn-meetup-devcon7
