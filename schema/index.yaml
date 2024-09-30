@@ -140,6 +140,39 @@ $defs:
         format: uri
       thumbs:
         type: object
+  member:
+    type: object
+    additionalProperties: false
+    required:
+      - name
+    properties:
+      id:
+        type: string
+        pattern: "^[a-z0-9-]+$"
+      name:
+        type: string
+      refs:
+        type: object
+        additionalProperties: false
+        properties:
+          twitter:
+            type: string
+          linkedin:
+            type: string
+          bsky:
+            type: string
+          github:
+            type: string
+          matrix:
+            type: string
+          email:
+            type: string
+      imageUrl:
+        type: string
+        format: uri
+      thumbs:
+        type: object
+
   research:
     type: object
     additionalProperties: false
@@ -196,6 +229,7 @@ properties:
         type: array
         items:
           type: string
+          
   projects:
     type: array
     items:
@@ -210,6 +244,12 @@ properties:
     type: array
     items:
       $ref: "#/$defs/person"
+
+members:
+    type: array
+    items:
+      $ref: "#/$defs/person"
+      
 
   research:
     type: array
