@@ -172,7 +172,39 @@ $defs:
         format: uri
       thumbs:
         type: object
-
+        
+  oommunity-partner:
+    type: object
+    additionalProperties: false
+    required:
+      - name
+    properties:
+      id:
+        type: string
+        pattern: "^[a-z0-9-]+$"
+      name:
+        type: string
+      refs:
+        type: object
+        additionalProperties: false
+        properties:
+          twitter:
+            type: string
+          linkedin:
+            type: string
+          bsky:
+            type: string
+          github:
+            type: string
+          matrix:
+            type: string
+          email:
+            type: string
+      imageUrl:
+        type: string
+        format: uri
+      thumbs:
+        type: object
   research:
     type: object
     additionalProperties: false
@@ -248,9 +280,13 @@ properties:
 members:
     type: array
     items:
-      $ref: "#/$defs/person"
-      
+      $ref: "#/$defs/members"
 
+community-partner:
+    type: array
+    items:
+      $ref: "#/$defs/community-partner"
+      
   research:
     type: array
     items:
