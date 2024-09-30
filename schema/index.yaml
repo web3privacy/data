@@ -103,7 +103,7 @@ $defs:
         type: object
   person:
     type: object
-    additionalProperties: true
+    additionalProperties: false
     required:
       - name
     properties:
