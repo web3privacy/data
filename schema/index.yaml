@@ -284,8 +284,8 @@ members:
 community-partners:
     type: array
     items:
-      $ref: "#/$defs/community-partners"
-      
+      $ref: "#/$defs/community-partners
+
   research:
     type: array
     items:
