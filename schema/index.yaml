@@ -142,60 +142,44 @@ $defs:
         type: object
   members:
     type: object
-    additionalProperties: true
+    additionalProperties: false
     required:
       - name
     properties:
       name:
         type: string
+      imageUrl:
+        type: string
+        format: uri
       refs:
         type: object
         additionalProperties: false
         properties:
           twitter:
             type: string
-          linkedin:
+          website:
             type: string
-          bsky:
-            type: string
-          github:
-            type: string
-          matrix:
-            type: string
-          email:
-            type: string
-      imageUrl:
-        type: string
-        format: uri
       thumbs:
         type: object
   community-partners:
     type: object
-    additionalProperties: true
+    additionalProperties: false
     required:
       - name
     properties:
       name:
         type: string
+      imageUrl:
+        type: string
+        format: uri
       refs:
         type: object
         additionalProperties: false
         properties:
           twitter:
             type: string
-          linkedin:
+          website:
             type: string
-          bsky:
-            type: string
-          github:
-            type: string
-          matrix:
-            type: string
-          email:
-            type: string
-      imageUrl:
-        type: string
-        format: uri
       thumbs:
         type: object
   research:
