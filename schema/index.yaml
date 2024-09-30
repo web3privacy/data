@@ -140,7 +140,7 @@ $defs:
         format: uri
       thumbs:
         type: object
-  member:
+  members:
     type: object
     additionalProperties: false
     required:
