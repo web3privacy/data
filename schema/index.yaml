@@ -173,7 +173,7 @@ $defs:
       thumbs:
         type: object
         
-  oommunity-partner:
+  community-partner:
     type: object
     additionalProperties: false
     required:
