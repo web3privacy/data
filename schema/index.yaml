@@ -248,7 +248,7 @@ properties:
     type: object
   teams:
     type: object
-    additionalProperties: false
+    additionalProperties: true
     properties:
       core-team:
         type: array
