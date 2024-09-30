@@ -172,7 +172,6 @@ $defs:
         format: uri
       thumbs:
         type: object
-        
   community-partners:
     type: object
     additionalProperties: false
