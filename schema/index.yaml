@@ -140,6 +140,48 @@ $defs:
         format: uri
       thumbs:
         type: object
+  members:
+    type: object
+    additionalProperties: false
+    required:
+      - name
+    properties:
+      name:
+        type: string
+      imageUrl:
+        type: string
+        format: uri
+      refs:
+        type: object
+        additionalProperties: false
+        properties:
+          twitter:
+            type: string
+          website:
+            type: string
+      thumbs:
+        type: object
+  community-partners:
+    type: object
+    additionalProperties: false
+    required:
+      - name
+    properties:
+      name:
+        type: string
+      imageUrl:
+        type: string
+        format: uri
+      refs:
+        type: object
+        additionalProperties: false
+        properties:
+          twitter:
+            type: string
+          website:
+            type: string
+      thumbs:
+        type: object
   research:
     type: object
     additionalProperties: false
@@ -190,12 +232,31 @@ properties:
     type: object
   teams:
     type: object
-    additionalProperties: false
+    additionalProperties: true
     properties:
       core-team:
         type: array
         items:
           type: string
+      core-speakers:
+        type: array
+        items:
+          type: string
+      core-contributors:
+        type: array
+        items:
+          type: string
+          
+  members:
+        type: array
+        items:
+          $ref: "#/$defs/members"
+          
+  community-partners:
+        type: array
+        items:
+          $ref: "#/$defs/community-partners"
+          
   projects:
     type: array
     items:

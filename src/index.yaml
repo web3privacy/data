@@ -27,6 +27,32 @@ teams:
     - mykola-siusko
     - pg
     - coinmandeer
+  members:
+    $load: members
+  community-partners:
+    $load: community-partners
+  core-speakers:
+    - david-chaum
+    - tor-ekeland
+    - michael-bauwens
+    - vitalik-buterin
+    - paul-dylan-ennis
+    - jaromil
+    - ameen-soleimani
+    - ahmed-ghappour
+    - scott-moore
+    - juraj-bednar
+    - kurt-opsahl
+    - guy-zyskind
+  core-contributors:
+    - mykola-siusko
+    - pg
+    - michael-parenti
+    - coinmandeer
+    - robert
+    - cat
+    - odd
+    - mf
 research:
   $load: research
 projects:
