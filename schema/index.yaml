@@ -260,6 +260,22 @@ properties:
         type: array
         items:
           type: string
+      members:
+        type: array
+        items:
+          typs: string
+      community-partners:
+        type: array
+        items:
+          type: string
+      core-speakers:
+        type: array
+        items:
+          type: string
+      core-contributors:
+        type: array
+        items:
+          type: string
           
   projects:
     type: array
@@ -275,16 +291,6 @@ properties:
     type: array
     items:
       $ref: "#/$defs/person"
-
-members:
-    type: array
-    items:
-      $ref: "#/$defs/members"
-
-community-partners:
-    type: array
-    items:
-      $ref: "#/$defs/community-partners"
 
   research:
     type: array
