@@ -173,7 +173,7 @@ $defs:
       thumbs:
         type: object
         
-  community-partner:
+  community-partners:
     type: object
     additionalProperties: false
     required:
@@ -282,10 +282,10 @@ members:
     items:
       $ref: "#/$defs/members"
 
-community-partner:
+community-partners:
     type: array
     items:
-      $ref: "#/$defs/community-partner"
+      $ref: "#/$defs/community-partners"
       
   research:
     type: array
