@@ -142,7 +142,7 @@ $defs:
         type: object
   members:
     type: object
-    additionalProperties: false
+    additionalProperties: true
     required:
       - name
     properties:
@@ -171,7 +171,7 @@ $defs:
         type: object
   community-partners:
     type: object
-    additionalProperties: false
+    additionalProperties: true
     required:
       - name
     properties:
