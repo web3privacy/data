@@ -263,11 +263,11 @@ properties:
       members:
         type: array
         items:
-          typs: string
+          $ref: "#/$defs/members"
       community-partners:
         type: array
         items:
-          type: string
+          $ref: "#/$defs/community-partners"
       core-speakers:
         type: array
         items:
