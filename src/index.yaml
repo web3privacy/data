@@ -52,12 +52,8 @@ teams:
     
 members:
   $load: members
-    $opts:
-      loader: members
 community-partners:
   $load: community-partners
-    $opts:
-      loader: community-partners
 research:
   $load: research
 projects:
