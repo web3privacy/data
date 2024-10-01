@@ -146,6 +146,8 @@ $defs:
     required:
       - name
     properties:
+      id:
+        type: string
       name:
         type: string
       imageUrl:
@@ -167,6 +169,8 @@ $defs:
     required:
       - name
     properties:
+      id:
+        type: string
       name:
         type: string
       imageUrl:
