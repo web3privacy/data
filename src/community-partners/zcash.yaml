@@ -1,5 +1,5 @@
 name: Zcash
-imageUrl: https://web3privacy.info/membersLogo/zcash.png
-  refs:
+imageUrl: "https://web3privacy.info/membersLogo/zcash.png"
+refs:
   website: https://z.cash
   twitter: zcash

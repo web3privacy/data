@@ -27,10 +27,6 @@ teams:
     - mykola-siusko
     - pg
     - coinmandeer
-  members:
-    $load: members
-  community-partners:
-    $load: community-partners
   core-speakers:
     - david-chaum
     - tor-ekeland
@@ -53,6 +49,11 @@ teams:
     - cat
     - odd
     - mf
+    
+members:
+  $load: members
+community-partners:
+  $load: community-partners
 research:
   $load: research
 projects:
