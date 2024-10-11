@@ -1,5 +1,6 @@
 name: W3PN data refresh
-# This file manages the workflow for update scripts wthin the MAKEFILE, run to refresh the codebase.
+# This file manages the workflow for update scripts wthin the MAKEFILE
+# Run to refresh the event images, speaker images, and generating the thumbs for them
 
 on:
   schedule:
@@ -47,9 +48,17 @@ jobs:
           ls
         # cwebp is required by img-opt to manipulate images, script fails without this pre-requisite install
         
-      - name: run refresh script
-        run: make refresh
-        # 	executes 'deno run' on utils/engine.js /images.js /img-opt.js and /test.js
+      - name: run MAKEFILE environment
+        run: make build
+        # 	executes deno run --allow-all utils/build.js
+      - name: run images.js
+        run: make images
+
+      - name: run img-opt.js
+        run: make img-opt
+
+      - name: run test.js
+        run: make test
       
       - uses: EndBug/add-and-commit@v9
         with:
