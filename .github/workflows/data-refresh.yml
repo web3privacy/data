@@ -3,9 +3,7 @@ name: W3PN data refresh
 # Run to refresh the event images, speaker images, and generating the thumbs for them
 
 on:
-  schedule:
-    - cron: '0 0 1 * *'
-  workflow_run:
+    workflow_run:
     workflows: ["Synchronize data"]
     types:
       - completed
