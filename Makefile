@@ -13,6 +13,7 @@ images:
 	deno run --allow-all utils/images.js
 
 img-opt:
+	deno install --allow-all https://deno.land/x/sharp/mod.ts
 	deno run --allow-all utils/img-opt.js
 
 test:
