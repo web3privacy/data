@@ -19,8 +19,8 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
       resize = '';
     }
 
-    await run(`cwebp ${join(dir, f.name)} -o ${outputFn}${resize ? ' ' + resize : ''}`);
-    console.log(`File written: ${outputFn}`);
+    await run(`cwebp ${join(dir, name + '.' + format)} -o ${outputFn}${resize ? ' ' + resize : ''}`);
+    console.log(`thumbnail written: ${outputFn}`);
   }
 }
 
