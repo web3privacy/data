@@ -10,6 +10,14 @@ async function optimizeDir (dir, sizes) {
         if (!['jpg', 'jpeg', 'png'].includes(ext)) {
             continue;
         }
+        
+        // New - check if the image file exists before processing
+        const imagePath = join(dir, f.name)
+        if (!(await exists(imagePath))) {
+        console.log(`${imagePath} does not exist, skipping ..`)
+            continue;
+        }
+
         console.log(`processing: ${name}`)
 
         const explain = await run(`identify ${join(dir, f.name)}`);
