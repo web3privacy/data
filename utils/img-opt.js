@@ -1,6 +1,7 @@
 import { run } from "https://deno.land/x/run_simple@2.3.0/mod.ts";
 import { join } from "jsr:@std/path@0.224.0";
 import { exists } from "jsr:@std/fs@0.224.0";
+import { sharp } from "https://deno.land/x/sharp/mod.ts";
 
 async function checkThumbs(dir) {
   const thumbsPath = join(dir, 'thumbs');
@@ -14,12 +15,9 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     const sizeConf = sizes[size];
     const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
 
-    let resize = '';
-    if (width > sizeConf.width) {
-      resize = `-resize ${sizeConf.width} ${Math.round(height / (width / sizeConf.width))}`;
-    }
-
-    await run(`cwebp ${join(dir, name + '.' + format)} -o ${outputFn}${resize ? ' ' + resize : ''}`);
+    const imagePath = join(dir, name + '.' + format);
+    const image = await sharp(imagePath);
+    await image.resize(sizeConf.width, Math.round(height / (width / sizeConf.width))).toFile(outputFn);
     console.log(`thumbnail written: ${outputFn}`);
   }
 }
