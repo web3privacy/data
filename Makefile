@@ -13,7 +13,6 @@ images:
 	deno run --allow-all utils/images.js
 
 img-opt:
-	deno install --allow-all https://jsr.io/@epi/image-to-webp/mod.ts
 	deno run --allow-all utils/img-opt.js
 
 test:
