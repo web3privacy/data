@@ -3,11 +3,11 @@ name: W3PN data refresh
 # Run to refresh the event images, speaker images, and generating the thumbs for them
 
 on:
-    workflow_run:
+  workflow_dispatch:
+  workflow_run:
     workflows: ["Synchronize data"]
     types:
       - completed
-    workflow_dispatch:
 
 permissions:
   contents: write
