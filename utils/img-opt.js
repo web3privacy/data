@@ -14,9 +14,9 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     const sizeConf = sizes[size];
     const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
 
-    let resize = `-resize ${sizeConf.width} ${Math.round(height / (width / sizeConf.width))}`;
-    if (width <= sizeConf.width) {
-      resize = '';
+    let resize = '';
+    if (width > sizeConf.width) {
+      resize = `-resize ${sizeConf.width} ${Math.round(height / (width / sizeConf.width))}`;
     }
 
     await run(`cwebp ${join(dir, name + '.' + format)} -o ${outputFn}${resize ? ' ' + resize : ''}`);
