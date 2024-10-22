@@ -1,7 +1,7 @@
 import { run } from "https://deno.land/x/run_simple@2.3.0/mod.ts";
 import { join } from "jsr:@std/path@0.224.0";
 import { exists } from "jsr:@std/fs@0.224.0";
-import * as mod from "jsr:@epi/image-to-webp";
+import { imageToWebP } from "jsr:@epi/image-to-webp";
 import { Image } from "https://deno.land/x/imagescript@1.3.0/mod.ts";
 
 // Function to check the 'thumbs' directory exists within /_images
@@ -28,9 +28,10 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
-    const webp = await mod.imageToWebP(resized);
+    const webp = await imageToWebP(resized);
+    
     await Deno.writeFile(outputFn, webp);
-    console.log(`thumbnail written: ${outputFn}`);
+    console.log(`Thumbnail generated: ${outputFn}`); // Log the generated thumbnail
   }
 }
 
@@ -50,7 +51,7 @@ async function optimizeDir(dir, sizes) {
       continue;
     }
 
-    console.log(`processing: ${name}`);
+    console.log(`Processing: ${name}`);
 
     const explain = await run(`identify ${join(dir, f.name)}`);
     const [_, format, resolution] = explain.split(' ');
@@ -59,3 +60,10 @@ async function optimizeDir(dir, sizes) {
     await writeThumbs(dir, sizes, name, format, width, height);
   }
 }
+
+// Example usage
+await optimizeDir('./src/people/_images', { '64px': { width: 64 }, '128px': { width: 128 }, '400px': { width: 400 } });
+
+const eventSizes = { '128px': { width: 128 }, '360px': { width: 360 }, '640px': { width: 640 } };
+await optimizeDir('./src/events/_images/2023', eventSizes);
+await optimizeDir('./src/events/_images/2024', eventSizes);
