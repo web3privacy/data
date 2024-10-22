@@ -13,8 +13,8 @@ async function checkThumbs(dir) {
 async function writeThumbs(dir, sizes, name, format, width, height) {
   for (const size of Object.keys(sizes)) {
     const sizeConf = sizes[size];
+    const format = 'png', 'jpg', 'jpeg';
     const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
-
     const imagePath = join(dir, name + '.' + format);
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
