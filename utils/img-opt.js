@@ -1,7 +1,7 @@
 import { run } from "https://deno.land/x/run_simple@2.3.0/mod.ts";
 import { join } from "jsr:@std/path@0.224.0";
 import { exists } from "jsr:@std/fs@0.224.0";
-import { imageToWebP } from "jsr:@epi/image-to-webp";
+import { ImageToWebp } from "jsr:@epi/image-to-webp";
 import { Image } from "https://deno.land/x/imagescript@1.3.0/mod.ts";
 
 // Function to check the 'thumbs' directory exists within /_images
@@ -28,7 +28,7 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
-    const webp = await imageToWebP(resized, { quality: 80 }); // Use the imageToWebP function of image-to-webp package at 80% quality
+    const webp = await ImageToWebP(resized, { quality: 80 });
     
     await Deno.writeFile(outputFn, webp);
     console.log(`Thumbnail generated: ${outputFn}`); // Log the generated thumbnail
