@@ -2,7 +2,9 @@ import { run } from "https://deno.land/x/run_simple@2.3.0/mod.ts";
 import { join } from "jsr:@std/path@0.224.0";
 import { exists } from "jsr:@std/fs@0.224.0";
 import * as mod from "jsr:@epi/image-to-webp";
+import { decode, encode } from "https://deno.land/x/imagescript@1.0.0/mod.ts";
 
+// function to check the 'thumbs' directory exists within /_images
 async function checkThumbs(dir) {
   const thumbsPath = join(dir, 'thumbs');
   if (!(await exists(thumbsPath))) {
@@ -10,6 +12,32 @@ async function checkThumbs(dir) {
   }
 }
 
+// function to resize images using imagescipt deno library
+async function resize(imageBuffer, newWidth, newHeight) {
+  const image = await decode(imageBuffer);
+  const resizedImage = image.resize(newWidth, newHeight);
+  return await encode(resizedImage);
+}
+
+// function to wrtie the thumbnails into the directory
+async function writeThumbs(dir, sizes, name, format, width, height) {
+  for (const size of Object.keys(sizes)) {
+    const sizeConf = sizes[size];
+    const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
+    const imagePath = join(dir, name + '.' + format);
+    if (!(await exists(imagePath))) {
+      console.log(`${imagePath} already exists, skipping ...`);
+      continue;
+    }
+    const image = await Deno.readFile(imagePath);
+    const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
+    const webp = await imageToWebP(resized);
+    await Deno.writeFile(outputFn, webp);
+    console.log(`thumbnail written: ${outputFn}`);
+  }
+}
+
+// function to write the thumbnails into the directory
 async function writeThumbs(dir, sizes, name, format, width, height) {
   for (const size of Object.keys(sizes)) {
     const sizeConf = sizes[size];
@@ -28,8 +56,9 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
   }
 }
 
+// function to optimize the sizes of thumnbails for people and events
 async function optimizeDir(dir, sizes) {
-  await checkThumbs(dir);
+  await checkThuniclazmbs(dir);
 
   for await (const f of Deno.readDir(dir)) {
     const [name, ext] = f.name.split('.');
