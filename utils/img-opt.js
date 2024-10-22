@@ -28,10 +28,9 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
-    const webp = await mod.imageToWebP(resized); // Use the imageToWebP function of image-to-webp package
-    
+    const webp = await mod.imageToWebP(resized);
     await Deno.writeFile(outputFn, webp);
-    console.log(`Thumbnail generated: ${outputFn}`); // Log the generated thumbnail
+    console.log(`thumbnail written: ${outputFn}`);
   }
 }
 
@@ -40,32 +39,27 @@ async function optimizeDir(dir, sizes) {
   await checkThumbs(dir);
 
   for await (const f of Deno.readDir(dir)) {
-    const [name] = f.name.split('.');
-    const formats = ['jpg', 'jpeg', 'png'];
-    let foundImage = false;
-
-    for (const ext of formats) {
-      const imagePath = join(dir, `${name}.${ext}`);
-      if (await exists(imagePath)) {
-        console.log(`Processing: ${name}.${ext}`);
-        foundImage = true;
-
-        const explain = await run(`identify ${imagePath}`);
-        const [_, format, resolution] = explain.split(' ');
-        const [width, height] = resolution.split('x').map(c => Number(c));
-
-        await writeThumbs(dir, sizes, name, ext, width, height);
-        break; // Exit the loop once the first found image is processed
-      }
+    const [name, ext] = f.name.split('.');
+    if (!['jpg', 'jpeg', 'png'].includes(ext)) {
+      continue;
     }
 
-    if (!foundImage) {
-      console.log(`No valid image found for: ${name}, please upload it to /src/people/_images/ folder ...`);
+    const imagePath = join(dir, f.name);
+    if (!(await exists(imagePath))) {
+      console.log(`${imagePath} does not exist, skipping ...`);
+      continue;
     }
+
+    console.log(`processing: ${name}`);
+
+    const explain = await run(`identify ${join(dir, f.name)}`);
+    const [_, format, resolution] = explain.split(' ');
+    const [width, height] = resolution.split('x').map(c => Number(c));
+
+    await writeThumbs(dir, sizes, name, format, width, height);
   }
 }
 
-// Example usage
 await optimizeDir('./src/people/_images', { '64px': { width: 64 }, '128px': { width: 128 }, '400px': { width: 400 } });
 
 const eventSizes = { '128px': { width: 128 }, '360px': { width: 360 }, '640px': { width: 640 } };
