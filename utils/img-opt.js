@@ -37,24 +37,6 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
   }
 }
 
-// function to write the thumbnails into the directory
-async function writeThumbs(dir, sizes, name, format, width, height) {
-  for (const size of Object.keys(sizes)) {
-    const sizeConf = sizes[size];
-    const format = 'png' || 'jpg' || 'jpeg';
-    const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
-    const imagePath = join(dir, name + '.' + format);
-    if (!(await exists(imagePath))) {
-      console.log(`${imagePath} already exists, skipping ...`);
-      continue;
-    }
-    const image = await Deno.readFile(imagePath);
-    const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
-    const webp = await ImagetoWebP(resized);
-    await Deno.writeFile(outputFn, webp);
-    console.log(`thumbnail written: ${outputFn}`);
-  }
-}
 
 // function to optimize the sizes of thumnbails for people and events
 async function optimizeDir(dir, sizes) {
