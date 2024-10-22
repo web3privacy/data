@@ -28,7 +28,7 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
-    const webp = await ImageToWebP(resized, { quality: 80 });
+    const webp = await mod.ImageToWebP(resized, { quality: 80 });
     
     await Deno.writeFile(outputFn, webp);
     console.log(`Thumbnail generated: ${outputFn}`); // Log the generated thumbnail
