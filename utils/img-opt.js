@@ -25,10 +25,7 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     const sizeConf = sizes[size];
     const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
     const imagePath = join(dir, name + '.' + format);
-    if (!(await exists(imagePath))) {
-      console.log(`${imagePath} already exists, skipping ...`);
-      continue;
-    }
+    
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
     const webp = await mod.imageToWebP(resized);
@@ -49,7 +46,7 @@ async function optimizeDir(dir, sizes) {
 
     const imagePath = join(dir, f.name);
     if (!(await exists(imagePath))) {
-      console.log(`${imagePath} already exists, skipping ...`);
+      console.log(`${imagePath} does not exist, skipping ...`);
       continue;
     }
 
@@ -62,9 +59,3 @@ async function optimizeDir(dir, sizes) {
     await writeThumbs(dir, sizes, name, format, width, height);
   }
 }
-
-await optimizeDir('./src/people/_images', { '64px': { width: 64 }, '128px': { width: 128 }, '400px': { width: 400 } });
-
-const eventSizes = { '128px': { width: 128 }, '360px': { width: 360 }, '640px': { width: 640 } };
-await optimizeDir('./src/events/_images/2023', eventSizes);
-await optimizeDir('./src/events/_images/2024', eventSizes);
