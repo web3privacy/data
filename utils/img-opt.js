@@ -1,7 +1,7 @@
 import { run } from "https://deno.land/x/run_simple@2.3.0/mod.ts";
 import { join } from "jsr:@std/path@0.224.0";
 import { exists } from "jsr:@std/fs@0.224.0";
-import { ImageToWebp } from "jsr:@epi/image-to-webp";
+import * as mod from "jsr:@epi/image-to-webp";
 
 async function checkThumbs(dir) {
   const thumbsPath = join(dir, 'thumbs');
