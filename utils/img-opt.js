@@ -28,10 +28,9 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
-    const webp = await ImageToWebP(resized);
-    
+    const webp = await mod.imageToWebP(resized);
     await Deno.writeFile(outputFn, webp);
-    console.log(`Thumbnail generated: ${outputFn}`); // Log the generated thumbnail
+    console.log(`thumbnail written: ${outputFn}`);
   }
 }
 
@@ -51,7 +50,7 @@ async function optimizeDir(dir, sizes) {
       continue;
     }
 
-    console.log(`Processing: ${name}`);
+    console.log(`processing: ${name}`);
 
     const explain = await run(`identify ${join(dir, f.name)}`);
     const [_, format, resolution] = explain.split(' ');
@@ -61,9 +60,7 @@ async function optimizeDir(dir, sizes) {
   }
 }
 
-// Example usage
 await optimizeDir('./src/people/_images', { '64px': { width: 64 }, '128px': { width: 128 }, '400px': { width: 400 } });
-
 const eventSizes = { '128px': { width: 128 }, '360px': { width: 360 }, '640px': { width: 640 } };
 await optimizeDir('./src/events/_images/2023', eventSizes);
 await optimizeDir('./src/events/_images/2024', eventSizes);
