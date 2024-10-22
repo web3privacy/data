@@ -16,6 +16,10 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     const format = 'png' || 'jpg' || 'jpeg';
     const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
     const imagePath = join(dir, name + '.' + format);
+    if (!(await exists(imagePath))) {
+      console.log(`${imagePath} already exists, skipping ...`);
+      continue;
+    }
     const image = await Deno.readFile(imagePath);
     const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
     const webp = await ImagetoWebP(resized);
@@ -35,7 +39,7 @@ async function optimizeDir(dir, sizes) {
 
     const imagePath = join(dir, f.name);
     if (!(await exists(imagePath))) {
-      console.log(`${imagePath} does not exist, skipping ..`);
+      console.log(`${imagePath} already exists, skipping ...`);
       continue;
     }
 
