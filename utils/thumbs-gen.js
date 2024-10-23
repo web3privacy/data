@@ -101,7 +101,4 @@ async function makeThumbs(missingThumbs, imagesDir) {
                     return null;
                 });
 
-            if (!resizedImageBuffer) continue; // Skip if resizing failed
-
-            const webpBuffer = await imageToWebP(resizedImageBuffer).catch(err => {
-                console.error(`Error converting to
+            if (!resizedImageBuffer) continue; //
