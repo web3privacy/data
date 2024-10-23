@@ -3,7 +3,7 @@ import { join } from "jsr:@std/path";
 import { run } from "jsr:@libs/run";
 import { getImageSize } from "jsr:@retraigo/image-size";
 import { imageToWebP } from "jsr:@epi/image-to-webp";
-import { Image } from "jsr:@matmen/imagescript";
+import { Image } from "https://cdn.jsdelivr.net/npm/imagescript@latest/dist/imagescript.js";
 
 // Function to check for corresponding images for each .yaml file
 async function checkImages(peopleDir, imagesDir) {
