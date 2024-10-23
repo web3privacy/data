@@ -15,6 +15,9 @@ images:
 img-opt:
 	deno run --allow-all utils/img-opt.js
 
+thumbs-gen:
+	deno run --allow-all utils/thumbs-gen.js
+
 test:
 	deno test --allow-all utils/test.js
 
