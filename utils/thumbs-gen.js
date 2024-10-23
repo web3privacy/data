@@ -2,8 +2,7 @@ import { exists } from "jsr:@std/fs";
 import { join } from "jsr:@std/path";
 import { run } from "jsr:@libs/run";
 import { getImageSize } from "jsr:@retraigo/image-size";
-import { imageToWebP } from "jsr:@epi/image-to-webp";
-import { Image } from "https://cdn.jsdelivr.net/npm/imagescript@latest/dist/imagescript.js";
+import { Image } from "https://deno.land/x/imagescript@1.3.0/mod.ts";
 
 // Function to check for corresponding images for each .yaml file
 async function checkImages(peopleDir, imagesDir) {
@@ -93,12 +92,16 @@ async function makeThumbs(missingThumbs, imagesDir) {
 
         for (const [sizeName, newWidth] of Object.entries(sizes)) {
             const newHeight = Math.round((height / width) * newWidth);
-            const resizedImageBuffer = await Image.fromBuffer(imageBuffer)
-                .resize(newWidth, newHeight)
-                .toBuffer()
+            const resizedImageBuffer = await Image.decode(imageBuffer)
+                .then(image => image.resize(newWidth, newHeight).encode('webp'))
                 .catch(err => {
                     console.error(`Error resizing image ${name}:`, err);
                     return null;
                 });
 
-            if (!resizedImageBuffer) continue; //
+            if (!resizedImageBuffer) continue;
+
+            // Save the resized image
+            const thumbPath = join(imagesDir, 'thumbs', `${name}-${sizeName}.webp`);
+            await Deno.writeFile(thumb
+                                 
