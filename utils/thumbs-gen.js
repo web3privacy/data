@@ -111,7 +111,7 @@ async function makeThumbs(missingThumbs, imagesDir) {
 
 // const for pointing to directories to run script
 const peopleDir = './src/people';
-const imagesDir = './src/people/images';
+const imagesDir = './src/people/_images';
 
 await checkImages(peopleDir, imagesDir);
 await checkThumbs(imagesDir);
