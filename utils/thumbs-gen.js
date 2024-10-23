@@ -61,28 +61,47 @@ async function checkThumbs(imagesDir) {
 async function makeThumbs(missingThumbs, imagesDir) {
     const sizes = { '64px': 64, '128px': 128, '400px': 400 };
 
-    for (const name of missingThumbs) {
-        const imagePath = join(imagesDir, `${name}.jpg`); // Adjust based on your image format
-        const imageBuffer = await Deno.readFile(imagePath);
-        
-        // Get image dimensions
-        const { width, height } = await getImageSize(imageBuffer);
-        // resizing images to three specific widths
-        for (const [sizeName, width] of Object.entries(sizes)) {
-            const height = Math.round((height / width) * width);
-            const resizedImage = await Image.fromBuffer(imageBuffer).resize(width, height).toBuffer();
-        // converting images to webo format
-            const webpBuffer = await imageToWebP(resizedImage);
-            const outputPath = join(imagesDir, 'thumbs', `${name}-${sizeName}.webp`);
-            await Deno.writeFile(outputPath, webpBuffer);
-            console.log(`Thumbnail created: ${outputPath}`);
-        }
+    // Ensure the thumbs directory exists
+    const thumbsDir = join(imagesDir, 'thumbs');
+    if (!(await exists(thumbsDir))) {
+        await Deno.mkdir(thumbsDir, { recursive: true });
     }
-}
 
-// const pointing to the desired directories in project
-const peopleDir = './src/people';
-const imagesDir = join(peopleDir, '_images');
+    for (const name of missingThumbs) {
+        const imageFormats = ['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG'];
+        let imageBuffer = null;
 
-await checkImages(peopleDir, imagesDir);
-await checkThumbs(imagesDir);
+        // Try to read the image in different formats
+        for (const ext of imageFormats) {
+            const imagePath = join(imagesDir, `${name}${ext}`);
+            if (await exists(imagePath)) {
+                imageBuffer = await Deno.readFile(imagePath);
+                break; // Exit loop if image is found
+            }
+        }
+
+        if (!imageBuffer) {
+            console.error(`No image found for ${name} in any supported format.`);
+            continue; // Skip if no image was found
+        }
+
+        // Get image dimensions
+        const { width, height } = await getImageSize(imageBuffer).catch(err => {
+            console.error(`Error getting size for ${name}:`, err);
+            return { width: 0, height: 0 };
+        });
+
+        for (const [sizeName, newWidth] of Object.entries(sizes)) {
+            const newHeight = Math.round((height / width) * newWidth);
+            const resizedImageBuffer = await Image.fromBuffer(imageBuffer)
+                .resize(newWidth, newHeight)
+                .toBuffer()
+                .catch(err => {
+                    console.error(`Error resizing image ${name}:`, err);
+                    return null;
+                });
+
+            if (!resizedImageBuffer) continue; // Skip if resizing failed
+
+            const webpBuffer = await imageToWebP(resizedImageBuffer).catch(err => {
+                console.error(`Error converting to
