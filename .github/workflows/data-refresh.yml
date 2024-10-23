@@ -36,8 +36,8 @@ jobs:
       - name: run images.js
         run: make images
 
-      - name: run img-opt.js
-        run: make img-opt
+      - name: run thumbs-gen.js
+        run: make thumbs-gen
 
       - name: run test.js
         run: make test
