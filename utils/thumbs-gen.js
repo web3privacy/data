@@ -8,7 +8,7 @@ import { Image } from "https://deno.land/x/imagescript@1.3.0/mod.ts";
 async function checkImages(peopleDir, imagesDir) {
     const missingImages = [];
     for await (const entry of Deno.readDir(peopleDir)) {
-        if (entry.isFile && entry.name.endsWith('.yaml')) {
+        if (entry.isFile && entry.name.endsWith('.yaml || .yml')) {
             const imageName = entry.name.replace('.yaml', '').toLowerCase();
             const imageFormats = ['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG'];
             const imageExists = await Promise.all(imageFormats.map(async (ext) => {
