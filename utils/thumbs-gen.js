@@ -1,6 +1,6 @@
 import { exists } from "jsr:@std/fs";
 import { join } from "jsr:@std/path";
-import { command } from "jsr:@libs/run"; // Updated to use 'command'
+import { command } from "jsr:@libs/run";
 import { getImageInfo } from "jsr:@retraigo/image-size";
 import { Image } from "https://deno.land/x/imagescript@1.3.0/mod.ts";
 
@@ -109,9 +109,9 @@ async function makeThumbs(missingThumbs, imagesDir) {
     }
 }
 
-// Example usage
-const peopleDir = './people'; // Replace with your actual directory
-const imagesDir = './images'; // Replace with your actual directory
+// const for pointing to directories to run script
+const peopleDir = '.src/people';
+const imagesDir = '.src/people/images';
 
 await checkImages(peopleDir, imagesDir);
 await checkThumbs(imagesDir);
