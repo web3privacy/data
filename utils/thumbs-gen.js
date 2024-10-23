@@ -1,7 +1,7 @@
 import { exists } from "jsr:@std/fs";
 import { join } from "jsr:@std/path";
-import { run } from "jsr:@libs/run";
-import { getImageInfo } from "jsr:@retraigo/image-size";
+import { command } from "jsr:@libs/run"; // Updated to use 'command'
+import { getImageSize } from "jsr:@retraigo/image-size";
 import { Image } from "https://deno.land/x/imagescript@1.3.0/mod.ts";
 
 // Function to check for corresponding images for each .yaml file
@@ -85,7 +85,7 @@ async function makeThumbs(missingThumbs, imagesDir) {
         }
 
         // Get image dimensions
-        const { width, height } = await getImageInfo(imageBuffer).catch(err => {
+        const { width, height } = await getImageSize(imageBuffer).catch(err => {
             console.error(`Error getting size for ${name}:`, err);
             return { width: 0, height: 0 };
         });
