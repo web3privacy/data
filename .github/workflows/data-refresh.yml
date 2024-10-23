@@ -32,14 +32,17 @@ jobs:
 
       - name: run MAKEFILE environment
         run: make build
-        # 	executes deno run --allow-all utils/build.js
-      - name: run images.js
+
+      - name: running images.js - checking event images
         run: make images
 
-      - name: run thumbs-gen.js
+      - name: running img-opt.js - optimising images and making thumbnails (events)
+        run: make img-opt
+
+      - name: run thumbs-gen.js - optimising images and making thumbnails (people)
         run: make thumbs-gen
 
-      - name: run test.js
+      - name: run test.js - testing the data according to schema
         run: make test
       
       - uses: EndBug/add-and-commit@v9
