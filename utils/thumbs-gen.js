@@ -103,5 +103,15 @@ async function makeThumbs(missingThumbs, imagesDir) {
 
             // Save the resized image
             const thumbPath = join(imagesDir, 'thumbs', `${name}-${sizeName}.webp`);
-            await Deno.writeFile(thumb
-                                 
+            await Deno.writeFile(thumbPath, resizedImageBuffer);
+            console.log(`Created thumbnail for ${name} at size ${sizeName}`);
+        }
+    }
+}
+
+// Example usage
+const peopleDir = './people'; // Replace with your actual directory
+const imagesDir = './images'; // Replace with your actual directory
+
+await checkImages(peopleDir, imagesDir);
+await checkThumbs(imagesDir);
