@@ -1,14 +1,13 @@
 name: W3PN data refresh
-# This file manages the workflow for update scripts wthin the MAKEFILE, run to refresh the codebase.
+# This file manages the workflow for update scripts wthin the MAKEFILE
+# Run to refresh the event images, speaker images, and generating the thumbs for them
 
 on:
-  schedule:
-    - cron: '0 0 1 * *'
+  workflow_dispatch:
   workflow_run:
     workflows: ["Synchronize data"]
     types:
       - completed
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -31,25 +30,20 @@ jobs:
         with:
           timezoneLinux: "Europe/Prague"
 
-      - name: Install cwebp
-        shell: bash
-        run: |
-          pwd
-          sudo apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev
-          wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.4-linux-x86-64.tar.gz
-          tar xzvf libwebp-1.2.4-linux-x86-64.tar.gz
-          cd libwebp-1.2.4-linux-x86-64/bin
-          mv cwebp ${{ github.workspace }}
-          cd ../..
-          rm -rf libwebp-1.2.4-linux-x86-64
-          rm -rf libwebp-1.2.4-linux-x86-64.tar.gz
-          sudo mv cwebp /bin
-          ls
-        # cwebp is required by img-opt to manipulate images, script fails without this pre-requisite install
-        
-      - name: run refresh script
-        run: make refresh
-        # 	executes 'deno run' on utils/engine.js /images.js /img-opt.js and /test.js
+      - name: run MAKEFILE environment
+        run: make build
+
+      - name: running images.js - checking event images
+        run: make images
+
+      - name: running img-opt.js - optimising images and making thumbnails (events)
+        run: make img-opt
+
+      - name: run thumbs-gen.js - optimising images and making thumbnails (people)
+        run: make thumbs-gen
+
+      - name: run test.js - testing the data according to schema
+        run: make test
       
       - uses: EndBug/add-and-commit@v9
         with:

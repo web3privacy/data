@@ -15,6 +15,9 @@ images:
 img-opt:
 	deno run --allow-all utils/img-opt.js
 
+thumbs-gen:
+	deno run --allow-all utils/thumbs-gen.js
+
 test:
 	deno test --allow-all utils/test.js
 
@@ -22,4 +25,4 @@ fmt:
 	deno fmt utils/*.js
 
 refresh:
-	deno run --allow-all utils/engine.js ; deno run --allow-all utils/images.js ; deno run --allow-all utils/img-opt.js ; deno run --allow-all utils/test.js
+	deno run --allow-all utils/engine.js ; deno run --allow-all utils/images.js ; deno run --allow-all utils/img-opt.js ; deno run --allow-all utils/thumbs-gen.js ; deno run --allow-all utils/test.js
