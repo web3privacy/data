@@ -21,7 +21,7 @@ links:
   mirror: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073
   youtube: https://youtube.com/@Web3PrivacyNow
   telegram: https://t.me/+AKj7mTSVcTc3N2Q0
-  
+
 teams:
   core-team:
     - mykola-siusko
@@ -40,6 +40,7 @@ teams:
     - juraj-bednar
     - kurt-opsahl
     - guy-zyskind
+    
   core-contributors:
     - mykola-siusko
     - pg
@@ -49,7 +50,11 @@ teams:
     - cat
     - odd
     - mf
-    
+    - jensei
+    - andreea
+    - ann-brody
+    - alina
+
 members:
   $load: members
 community-partners:
