@@ -116,6 +116,8 @@ $defs:
         type: string
       caption:
         type: string
+      job:
+        type: string
       country:
         type: string
         pattern: "^[a-z]{2}$"
