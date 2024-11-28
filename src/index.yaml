@@ -6,9 +6,14 @@ links:
   manifesto: https://docs.web3privacy.info/about-us/manifesto
   github: https://github.com/web3privacy
   git: https://git.web3privacy.info
+  events: https://web3privacy.info/events
+  event-summit: https://summit.web3privacy.info
+  event-congress: https://congress.web3privacy.info
   research: https://web3privacy.info/research
   forum: https://forum.web3privacy.info
   explorer: https://explorer.web3privacy.info
+  explorer-data: https://explorer-data.web3privacy.info
+  jobs: https://jobs.web3privacy.info
   news: https://news.web3privacy.info
   cfp: https://cfp.web3privacy.info
   membership overview: https://web3privacy.info/membership
@@ -20,7 +25,6 @@ links:
   bluesky: https://bsky.app/profile/web3privacy.info
   mirror: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073
   youtube: https://youtube.com/@Web3PrivacyNow
-  telegram: https://t.me/+AKj7mTSVcTc3N2Q0
 
 teams:
   core-team:
