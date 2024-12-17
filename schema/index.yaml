@@ -35,8 +35,6 @@ $defs:
     properties:
       id:
         type: string
-      issue:
-        type: number
       type:
         type: string
         enum:
