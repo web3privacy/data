@@ -1,13 +1,4 @@
-# ----
-#
-# THIS FILE IS GENERATED, PLEASE DO NOT EDIT!
-#
-# EDIT GITHUB PROJECT/ISSUES INSTEAD:
-# https://github.com/orgs/web3privacy/projects/11
-#
-# ----
-- issue: 1
-  title: ZK solutions DB
+- title: ZK solutions DB
   status: live
   sort: 1
   labels:
@@ -18,8 +9,8 @@
   links:
     web: https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape#readme
     docs: https://docs.web3privacy.info/research/zk-solutions
-- issue: 2
-  title: Privacy Use-Cases DB
+    
+- title: Privacy Use-Cases DB
   status: live
   sort: 3
   labels:
@@ -30,8 +21,8 @@
   links:
     web: https://github.com/Msiusko/web3privacy/blob/main/Use-cases.md
     docs: https://docs.web3privacy.info/research/usecase-db
-- issue: 3
-  title: Pagency Framework
+    
+- title: Pagency Framework
   status: live
   sort: 5
   labels: []
@@ -42,8 +33,8 @@
   links:
     web: https://github.com/web3privacy/web3privacy/blob/main/Pagency/Pagency%20-%20privacy%20use-case%20facilitation%20framework.pdf
     docs: https://docs.web3privacy.info/research/pagency
-- issue: 4
-  title: Privacy Projects Hiring
+    
+- title: Privacy Projects Hiring
   status: live
   sort: 4
   labels:
@@ -56,15 +47,15 @@
   links:
     web: https://docs.google.com/spreadsheets/d/1dN6bIWyOh01Dl-y1iZh-1TASZxKUefD098BUALcnUb8/edit?usp=sharing
     docs: https://docs.web3privacy.info/research/hiring
-- issue: 5
-  title: Privacy Guides
+    
+- title: Privacy Guides
   status: backlog
   sort: 0
   labels: []
   assignees: []
   links: {}
-- issue: 6
-  title: Hackathon Curation Pack
+
+- title: Hackathon Curation Pack
   status: backlog
   sort: 2
   labels: []
@@ -72,8 +63,8 @@
     - EclecticSamurai
     - Msiusko
   links: {}
-- issue: 7
-  title: Privacy Annual Report 2024
+  
+- title: Privacy Annual Report 2024
   status: backlog
   sort: 3
   labels: []
@@ -81,8 +72,8 @@
     - EclecticSamurai
     - Msiusko
   links: {}
-- issue: 8
-  title: Ethereum Privacy Ecosystem
+  
+- title: Ethereum Privacy Ecosystem
   status: in-progress
   sort: 0
   labels: []
@@ -94,33 +85,32 @@
   links:
     web: https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Ethereum%20Ecosystem/Readme.md
     docs: https://docs.web3privacy.info/research/ethereum-privacy-ecosystem/
-- issue: 9
-  title: Privacy use-cases DB 2.0 (major update)
+    
+- title: Privacy use-cases DB 2.0 (major update)
   status: backlog
   sort: 4
   labels:
     - db
   assignees: []
   links: {}
-- issue: 10
-  title: Privacy features audit concept for security audit organizations &
-    whitehackers
+  
+- title: Privacy features audit concept for security audit organizations & whitehackers
   status: backlog
   sort: 1
   labels: []
   assignees:
     - Msiusko
   links: {}
-- issue: 11
-  title: Scoring model for privacy-services
+  
+- title: Scoring model for privacy-services
   status: in-progress
   sort: 1
   labels: []
   assignees:
     - Msiusko
   links: {}
-- issue: 12
-  title: Privacy market outlook (2022)
+  
+- title: Privacy market outlook (2022)
   status: live
   sort: 2
   labels: []
@@ -129,8 +119,8 @@
   caption: 150-pages report on the state of privacy x web3 from funding to key projects.
   links:
     web: https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Privacy%20market%20outlook%20in%20Web3%20by%20Mykola%20Siusko%20(Jan%202023).pdf
-- issue: 13
-  title: Privacy use-cases within the Ukrainian-Russian war
+    
+- title: Privacy use-cases within the Ukrainian-Russian war
   status: live
   sort: 6
   labels: []
@@ -141,8 +131,8 @@
     Zcash Foundation.
   links:
     web: https://github.com/web3privacy/grants/blob/main/staticobjects/Privacy%20use%20cases%20with%20the%20focus%20on%20Zcash%20(privacy%20coins)_Siusko.pdf
-- issue: 14
-  title: Privacy market DB
+    
+- title: Privacy market DB
   status: live
   sort: 0
   labels: []
