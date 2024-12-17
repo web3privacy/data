@@ -5,7 +5,7 @@ name: W3PN data refresh
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Synchronize data"]
+    workflows: ["Deploy to GitHub Pages"]
     types:
       - completed
 
