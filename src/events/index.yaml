@@ -1,6 +1,107 @@
 # 2025 EVENTS
 
+- id: c25bue
+  type: congress
+  date: "2025-11-01"
+  city: Buenos Aires
+  country: ar
+  place: "[TBA](https://congress.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[DevCon](https://devcon.org)"
+  lead: Mykola
+  slots: 16
+  visitors: 3000
+  links:
+    rsvp: https://lu.ma/u2sw5kpv
+    web: https://congress.web3privacy.info/
+  speakers:
+    - mykola-siusko
+    - pg
+    - coinmandeer
+    - mf
+    
+- id: m25dom
+  type: meetup
+  date: "2025-10-09"
+  city: Rome
+  country: it
+  place: "[TBA](https://web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[ETHRome](https://www.ethrome.org)"
+  lead: Mykola
+  slots: 16
+  visitors: 300
+  links:
+    rsvp: https://lu.ma/8jv4odjn
+  speakers:
+    - mykola-siusko
+    - pg
+    - coinmandeer
+    - mf
 
+- id: s25ber
+  type: summit
+  date: "2025-06-15"
+  city: Berlin
+  country: ge
+  place: "[TBA](https://summit.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[Berlin Blockchain Week](https://blockchainweek.berlin)"
+  lead: Mykola
+  slots: 16
+  visitors: 300
+  links:
+    rsvp: https://lu.ma/gdp7vt8u
+    web: https://summit.web3privacy.info/
+  speakers:
+    - mykola-siusko
+    - pg
+    - coinmandeer
+    - mf
+
+- id: m25prg
+  type: meetup
+  date: "2025-06-06"
+  city: Prague
+  country: cz
+  place: "[TBA](https://congress.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[ETHPrague](https://ethprague.com)"
+  lead: Mykola
+  slots: 16
+  visitors: 300
+  links:
+    rsvp: https://lu.ma/jhp1iapn
+  speakers:
+    - mykola-siusko
+    - pg
+    - coinmandeer
+    - mf
+
+- id: m25dam
+  type: meetup
+  date: "2025-05-08"
+  city: Amsterdam
+  country: nl
+  place: "[TBA](https://congress.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[ETHDam](https://www.ethdam.com)"
+  lead: Mykola
+  slots: 16
+  visitors: 300
+  links:
+    rsvp: https://lu.ma/73go30ij
+    web: https://congress.web3privacy.info
+  speakers:
+    - mykola-siusko
+    - pg
+    - coinmandeer
+    - mf
 
 # 2024 EVENTS
 
@@ -9,9 +110,8 @@
   date: "2024-11-11"
   city: Bangkok
   country: th
-  # DevCon 2024 - November 12-15 2024
-  place: "[TBA](https://congress.web3privacy.info)"
-  place-address: TBA
+  place: "[Lido Connect](https://lidoconnect.com)"
+  place-address: 256, RAMA I Road, Pathum Wan Bangkok
   confirmed: true
   coincidence: "[DevCon](https://devcon.org)"
   lead: Mykola
@@ -19,7 +119,7 @@
   visitors: 300
   links:
     rsvp: https://lu.ma/w3pn-meetup-devcon7
-    web: https://congress.web3privacy.info/
+    web: https://congress.web3privacy.info
   speakers:
     - ameen-soleimani
     - scott-moore
@@ -46,12 +146,11 @@
     - ying-tong
 
 - id: m24buc
-  issue: 8
   type: meetup
   date: "2024-03-28"
   city: Bucharest
   country: ro
-  coincidence: "[ETHBucharest](https://www.ethbucharest.xyz/)"
+  coincidence: "[ETHBucharest](https://www.ethbucharest.xyz)"
   optional: true
   slots: 3
   lead: Mykola
@@ -69,19 +168,18 @@
     - kieran-mesquita
 
 - id: m24ams
-  issue: 9
   type: meetup
   date: "2024-04-11"
   city: Amsterdam
   country: nl
-  place: "[Vrij Paleis](https://www.vrijpaleis.nl/)"
-  place-address: Paleisstraat 107, 1012 ZL Amsterdam, Paesi Bassi
+  place: "[Vrij Paleis](https://www.vrijpaleis.nl)"
+  place-address: Paleisstraat 107, 1012 ZL Amsterdam
   lead: PG
   visitors: 90
   helpers:
     - Mykola
     - Alina
-  coincidence: "[ETHDam](https://www.ethdam.com/)"
+  coincidence: "[ETHDam](https://www.ethdam.com)"
   slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-ams1
@@ -95,12 +193,11 @@
     image: amsterdam01
 
 - id: m24ber
-  issue: 6
   type: meetup
   date: "2024-05-22"
   city: Berlin
   country: de
-  place: "[c-base](https://c-base.org/)"
+  place: "[c-base](https://c-base.org)"
   place-address: Rungestraße 20, 10179 Berlin
   coincidence: "ETHBerlin"
   lead: Mykola
@@ -133,12 +230,11 @@
     - Robert
   visitors: 210
   links:
-    web: https://c24ber.web3privacy.info/
+    web: https://c24ber.web3privacy.info
   design:
     image: berlin02
 
 - id: s24prg
-  issue: 11
   type: summit
   date: "2024-05-30"
   city: Prague
@@ -178,12 +274,11 @@
     image: prague01
 
 - id: m24bru
-  issue: 16
   type: meetup
   date: "2024-07-12"
   city: Brussels
   country: be
-  coincidence: "[EthCC](https://www.ethcc.io/)"
+  coincidence: "[EthCC](https://www.ethcc.io)"
   slots: 3
   design:
     image: brussels01
@@ -196,7 +291,6 @@
     - mykola-siusko
 
 - id: m24rom
-  issue: 13
   type: meetup
   date: "2024-10-03"
   city: Rome
@@ -226,10 +320,10 @@
   date: "2023-06-05"
   city: Prague
   country: cz
-  place: "[X10](https://www.divadlox10.cz/)"
+  place: "[X10](https://www.divadlox10.cz)"
   place-address: Charvátova 39/10, 11000 Prague 1
   confirmed: true
-  coincidence: "[ETHPrague](https://ethprague.com/)"
+  coincidence: "[ETHPrague](https://ethprague.com)"
   lead: Tree
   slots: 16
   visitors: 180
@@ -268,7 +362,7 @@
   place: "[Villaggio Globale](https://maps.app.goo.gl/S7kUruNvbpjgHuSh9)"
   place-address: Largo Dino Frisullo, 00153 Roma RM
   confirmed: true
-  coincidence: "[ETHRome](https://ethrome.org/)"
+  coincidence: "[ETHRome](https://ethrome.org)"
   lead: PG
   slots: 10
   visitors: 139
@@ -297,10 +391,10 @@
   date: "2023-11-14"
   city: Prague
   country: cz
-  place: "[Dílna](https://kafevdilne.cz/)"
+  place: "[Dílna](https://kafevdilne.cz)"
   place-address: Smíchovská náplavka - Kobka č. 10, Hořejší nábřeží, Praha 5
   confirmed: true
-  coincidence: "[DCxPrague](https://dcxprague.org/)"
+  coincidence: "[DCxPrague](https://dcxprague.org)"
   lead: Tree
   slots: 3
   visitors: 15
