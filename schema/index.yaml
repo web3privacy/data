@@ -190,12 +190,9 @@ $defs:
     type: object
     additionalProperties: false
     required:
-      - issue
       - title
       - status
     properties:
-      issue:
-        type: number
       title:
         type: string
       status:
