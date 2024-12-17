@@ -1,7 +1,7 @@
 # Web3Privacy Now Data
 
 [![Build and Deploy](https://github.com/web3privacy/data/actions/workflows/deploy.yml/badge.svg)](https://github.com/web3privacy/data/actions/workflows/deploy.yml)
-[![Synchronize data](https://github.com/web3privacy/data/actions/workflows/sync.yml/badge.svg)](https://github.com/web3privacy/data/actions/workflows/sync.yml)
+[![W3PN data refresh](https://github.com/web3privacy/data/actions/workflows/data-refresh.yml/badge.svg)](https://github.com/web3privacy/data/actions/workflows/data-refresh.yml)
 
 This repository is the structured dataset with basic informations about the [Web3Privacy Now](https://web3privacy.info/) initiative.
 
