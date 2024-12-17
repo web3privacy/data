@@ -23,6 +23,13 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
   for (const size of Object.keys(sizes)) {
     const sizeConf = sizes[size];
     const outputFn = join(dir, 'thumbs', `${name}-${size}.webp`);
+
+    // Check if the thumbnail file already exists
+    if (await exists(outputFn)) {
+      console.log(`Thumbnail already exists: ${outputFn}`);
+      continue;
+    }
+
     const imagePath = join(dir, name + '.' + format);
     
     if (!(await exists(imagePath))) {
