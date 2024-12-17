@@ -31,7 +31,8 @@ async function writeThumbs(dir, sizes, name, format, width, height) {
     }
 
     const image = await Deno.readFile(imagePath);
-    const resized = await resize(image, sizeConf.width, Math.round(height / (width / sizeConf.width)));
+    const imageData = await Image.decode(image);
+    const resized = await resize(image, sizeConf.width, Math.round(imageData.height / (imageData.width / sizeConf.width)));
     await Deno.writeFile(outputFn, resized);
     console.log(`Thumbnail written: ${outputFn}`);
   }
@@ -55,11 +56,11 @@ async function optimizeDir(dir, sizes) {
 
     console.log(`Processing: ${name}`);
 
-    const explain = await run(`identify ${join(dir, f.name)}`);
-    const [_, format, resolution] = explain.split(' ');
-    const [width, height] = resolution.split('x').map(c => Number(c));
+    const image = await Deno.readFile(imagePath);
+    const imageData = await Image.decode(image);
+    const [width, height] = [imageData.width, imageData.height];
 
-    await writeThumbs(dir, sizes, name, format, width, height);
+    await writeThumbs(dir, sizes, name, ext, width, height);
   }
 }
 
