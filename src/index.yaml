@@ -59,6 +59,20 @@ teams:
     - ann-brody
     - alina
 
+tiered-contributors:
+    - vitalik-buterin
+    - scott-moore
+    - naomi-brockwell
+    - roger-dingledine
+    - chelsea-manning
+    - alex-gluchowski
+    - sebastian-burgel
+    - ameen-soleimani
+    - jarrad-hope
+    - adrian-brink
+    - amir-taaki
+    - david-chaum
+
 members:
   $load: members
 community-partners:
