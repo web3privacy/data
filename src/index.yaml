@@ -59,7 +59,7 @@ teams:
     - ann-brody
     - alina
 
-tiered-contributors:
+  tiered-contributors:
     - vitalik-buterin
     - scott-moore
     - naomi-brockwell
