@@ -10,7 +10,6 @@
   confirmed: true
   coincidence: "[DevCon](https://devcon.org)"
   lead: Mykola
-  slots: 16
   links:
     rsvp: https://lu.ma/u2sw5kpv
     web: https://congress.web3privacy.info/
@@ -30,7 +29,6 @@
   confirmed: true
   coincidence: "[ETHRome](https://www.ethrome.org)"
   lead: Mykola
-  slots: 16
   links:
     rsvp: https://lu.ma/8jv4odjn
   speakers:
@@ -49,7 +47,6 @@
   confirmed: true
   coincidence: "Berlin Blockchain Week"
   lead: Mykola
-  slots: 16
   links:
     rsvp: https://lu.ma/gdp7vt8u
     web: https://summit.web3privacy.info/
@@ -69,7 +66,6 @@
   confirmed: true
   coincidence: "[ETHPrague](https://ethprague.com)"
   lead: Mykola
-  slots: 16
   links:
     rsvp: https://lu.ma/jhp1iapn
   speakers:
@@ -88,7 +84,6 @@
   confirmed: true
   coincidence: "[ETHDam](https://www.ethdam.com)"
   lead: Mykola
-  slots: 16
   links:
     rsvp: https://lu.ma/73go30ij
     web: https://congress.web3privacy.info
@@ -110,7 +105,6 @@
   confirmed: true
   coincidence: "[DevCon](https://devcon.org)"
   lead: Mykola
-  slots: 16
   links:
     rsvp: https://lu.ma/w3pn-meetup-devcon7
     web: https://congress.web3privacy.info
@@ -146,7 +140,6 @@
   country: it
   coincidence: "ETHRome"
   lead: PG
-  slots: 5
   design:
     image: rome02
   helpers:
@@ -168,7 +161,6 @@
   city: Brussels
   country: be
   coincidence: "[EthCC](https://www.ethcc.io)"
-  slots: 3
   design:
     image: brussels01
   lead: Mykola
@@ -190,7 +182,6 @@
     - PG
     - Mykola
     - Coinmandeer
-  slots: 16
   links:
     rsvp: https://lu.ma/w3pn-summit-prague2
   speakers:
@@ -250,7 +241,6 @@
     - vaclav-pavlin
     - jaya-klara-brekke
     - mykola-siusko
-  slots: 4
   links:
     rsvp: https://lu.ma/w3pn-meetup-berlin1
   design:
@@ -268,7 +258,6 @@
     - Mykola
     - Alina
   coincidence: "[ETHDam](https://www.ethdam.com)"
-  slots: 3
   links:
     rsvp: https://lu.ma/w3pn-meetup-ams1
   speakers:
@@ -287,7 +276,6 @@
   country: ro
   coincidence: "[ETHBucharest](https://www.ethbucharest.xyz)"
   optional: true
-  slots: 3
   lead: Mykola
   design:
     image: bucharest01
@@ -313,7 +301,6 @@
   confirmed: true
   coincidence: "[DCxPrague](https://dcxprague.org)"
   lead: Tree
-  slots: 3
   links:
     web: https://lu.ma/w3pm-prg1
   speakers:
@@ -331,7 +318,6 @@
   confirmed: true
   coincidence: "[ETHRome](https://ethrome.org)"
   lead: PG
-  slots: 10
   links:
     web: https://lu.ma/web3privacynow_rome
   speakers:
@@ -361,7 +347,6 @@
   confirmed: true
   coincidence: "[ETHPrague](https://ethprague.com)"
   lead: Tree
-  slots: 16
   links:
     web: https://prague.web3privacy.info/
     git: https://github.com/web3privacy/w3ps1
