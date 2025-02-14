@@ -76,8 +76,6 @@ $defs:
         type: array
         items:
           type: string
-      slots:
-        type: number
       optional:
         type: boolean
       links:
