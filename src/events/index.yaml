@@ -11,7 +11,6 @@
   coincidence: "[DevCon](https://devcon.org)"
   lead: Mykola
   slots: 16
-  visitors: 3000
   links:
     rsvp: https://lu.ma/u2sw5kpv
     web: https://congress.web3privacy.info/
@@ -32,7 +31,6 @@
   coincidence: "[ETHRome](https://www.ethrome.org)"
   lead: Mykola
   slots: 16
-  visitors: 300
   links:
     rsvp: https://lu.ma/8jv4odjn
   speakers:
@@ -52,7 +50,6 @@
   coincidence: "Berlin Blockchain Week"
   lead: Mykola
   slots: 16
-  visitors: 300
   links:
     rsvp: https://lu.ma/gdp7vt8u
     web: https://summit.web3privacy.info/
@@ -73,7 +70,6 @@
   coincidence: "[ETHPrague](https://ethprague.com)"
   lead: Mykola
   slots: 16
-  visitors: 300
   links:
     rsvp: https://lu.ma/jhp1iapn
   speakers:
@@ -93,7 +89,6 @@
   coincidence: "[ETHDam](https://www.ethdam.com)"
   lead: Mykola
   slots: 16
-  visitors: 300
   links:
     rsvp: https://lu.ma/73go30ij
     web: https://congress.web3privacy.info
@@ -116,7 +111,6 @@
   coincidence: "[DevCon](https://devcon.org)"
   lead: Mykola
   slots: 16
-  visitors: 300
   links:
     rsvp: https://lu.ma/w3pn-meetup-devcon7
     web: https://congress.web3privacy.info
@@ -192,7 +186,6 @@
   country: cz
   coincidence: "ETHPrague"
   lead: PG
-  visitors: 180
   helpers:
     - PG
     - Mykola
@@ -235,7 +228,6 @@
     - Mykola
     - Coinmandeer
     - Robert
-  visitors: 210
   links:
     web: https://c24ber.web3privacy.info
   design:
@@ -250,7 +242,6 @@
   place-address: Rungestraße 20, 10179 Berlin
   coincidence: "ETHBerlin"
   lead: Mykola
-  visitors: 150
   helpers:
     - ligi
   speakers:
@@ -273,7 +264,6 @@
   place: "[Vrij Paleis](https://www.vrijpaleis.nl)"
   place-address: Paleisstraat 107, 1012 ZL Amsterdam
   lead: PG
-  visitors: 90
   helpers:
     - Mykola
     - Alina
@@ -299,7 +289,6 @@
   optional: true
   slots: 3
   lead: Mykola
-  visitors: 80
   design:
     image: bucharest01
   helpers:
@@ -325,7 +314,6 @@
   coincidence: "[DCxPrague](https://dcxprague.org)"
   lead: Tree
   slots: 3
-  visitors: 15
   links:
     web: https://lu.ma/w3pm-prg1
   speakers:
@@ -344,7 +332,6 @@
   coincidence: "[ETHRome](https://ethrome.org)"
   lead: PG
   slots: 10
-  visitors: 139
   links:
     web: https://lu.ma/web3privacynow_rome
   speakers:
@@ -362,7 +349,6 @@
     - carlo-chialastri
     - limone-eth
     - costanza-gallo
-    - pg
     - catsnaks
 
 - id: s23prg
@@ -376,7 +362,6 @@
   coincidence: "[ETHPrague](https://ethprague.com)"
   lead: Tree
   slots: 16
-  visitors: 180
   links:
     web: https://prague.web3privacy.info/
     git: https://github.com/web3privacy/w3ps1
@@ -400,7 +385,3 @@
     - serinko
     - steffen-kux
     - althea
-    - mykola-siusko
-    - pg
-    - tree
-
