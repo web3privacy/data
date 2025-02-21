@@ -37,25 +37,6 @@
     - coinmandeer
     - mf
 
-- id: s25ber
-  type: summit
-  date: "2025-06-15"
-  city: Berlin
-  country: de
-  place: "[TBA](https://summit.web3privacy.info)"
-  place-address: TBA
-  confirmed: true
-  coincidence: "Berlin Blockchain Week"
-  lead: Mykola
-  links:
-    rsvp: https://lu.ma/gdp7vt8u
-    web: https://summit.web3privacy.info/
-  speakers:
-    - mykola-siusko
-    - pg
-    - coinmandeer
-    - mf
-
 - id: m25prg
   type: meetup
   date: "2025-06-06"
