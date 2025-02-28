@@ -8,6 +8,8 @@ on:
     workflows: ["Deploy to GitHub Pages"]
     types:
       - completed
+  schedule:
+    - cron: '0 */12 * * *'
 
 permissions:
   contents: write
