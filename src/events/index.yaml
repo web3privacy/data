@@ -74,6 +74,21 @@
     - coinmandeer
     - mf
 
+- id: m25dam
+  type: meetup
+  date: "2025-04-01"
+  city: Bucharest
+  country: ro
+  place: "[Please register to see exact location](https://lu.ma/web3privacy)"
+  place-address: Please register to see exact location
+  confirmed: true
+  lead: Andrea
+  links:
+    rsvp: https://lu.ma/9ni8jbzx
+  speakers:
+    - pg
+    - coinmandeer
+
 # 2024 EVENTS
 
 - id: c24bkk
