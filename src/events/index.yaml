@@ -45,7 +45,7 @@
   place-address: TBA
   confirmed: true
   coincidence: "[Berlin Blockchain Week](https://blockchainweek.berlin)"
-  lead: mykola
+  lead: Mykola
   links:
     rsvp: https://lu.ma/sq2vtmdg
     web: http://dappcon.io
@@ -115,10 +115,11 @@
   place: "[Please register to see exact location](https://lu.ma/web3privacy)"
   place-address: Please register to see exact location
   confirmed: true
-  lead: andrea
+  lead: andreea
   links:
     rsvp: https://lu.ma/9ni8jbzx
   speakers:
+    - andreea
     - pg
     - mf
 
