@@ -38,7 +38,14 @@ export class Engine {
         for (const ev of out) {
           if (ev.speakers) {
             for (const spId of ev.speakers) {
-              if (!full.people((p) => p.id === spId)) {
+              let speakerExists = false;
+              for (const person of full.people) {
+                if (person.id === spId) {
+                  speakerExists = true;
+                  break;
+                }
+              }
+              if (!speakerExists) {
                 throw new Error(`Speaker not exists: ${spId} (event ${ev.id})`);
               }
             }
@@ -108,13 +115,19 @@ export class Engine {
         );
         if (opts.loader === "person") {
           // load image
-          const img = images((i) => i.id === fn);
+          let img = null;
+          for (const i of images) {
+            if (i.id === fn) {
+              img = i;
+              break;
+            }
+          }
           if (img) {
             item.imageUrl =
               `https://data.web3privacy.info/img/people/${img.id}.${img.ext}`;
-
+        
             item.thumbs = {}
-
+        
             // scan for thumbnails
             for await (const ti of Deno.readDir(join(dir, "_images", "thumbs"))) {
               const [name, ext] = ti.name.split('.')
