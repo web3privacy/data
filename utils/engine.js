@@ -30,7 +30,7 @@ export class Engine {
     const out = {};
     const dir = join(SRC_DIR, src);
     console.log(`reading dir=${dir}`);
-  
+
     if (await exists(join(dir, "index.yaml"))) {
       const out = await readYamlFile(join(dir, "index.yaml"));
       if (opts.loader === "events") {
@@ -38,14 +38,7 @@ export class Engine {
         for (const ev of out) {
           if (ev.speakers) {
             for (const spId of ev.speakers) {
-              let speakerExists = false;
-              for (const person of full.people) {
-                if (person.id === spId) {
-                  speakerExists = true;
-                  break;
-                }
-              }
-              if (!speakerExists) {
+              if (!full.people.find((p) => p.id === spId)) {
                 throw new Error(`Speaker not exists: ${spId} (event ${ev.id})`);
               }
             }
@@ -65,7 +58,7 @@ export class Engine {
             }
           }
           ev.images = images
-  
+
           ev.thumbs = {}
           // scan for thumbnails
           if (!await exists(join(yearDir, "thumbs"))) {
@@ -73,7 +66,7 @@ export class Engine {
           }
           for await (const ti of Deno.readDir(join(yearDir, "thumbs"))) {
             const [name, ext] = ti.name.split('.')
-  
+
             //console.log(name, `^${ev.id}-(.+)-(\\d+)px$`)
             const match = name.match(new RegExp(`^${ev.id}-([\\w\\d-]+)-(\\d+)px`));
             if (!match) {
@@ -81,14 +74,14 @@ export class Engine {
             }
             const thumbKey = match[2]
             const imageKey = match[1]
-  
+
             ev.thumbs[[ imageKey, thumbKey.replace('px', '')].join(':')] = `https://data.web3privacy.info/img/events/${year}/thumbs/${ev.id}-${imageKey}-${thumbKey}px.${ext}`
           }
         }
       }
       return out;
     }
-  
+
     let images = [];
     if (await exists(join(dir, "_images"))) {
       for await (const ie of Deno.readDir(join(dir, "_images"))) {
@@ -96,11 +89,11 @@ export class Engine {
         images.push({ id, ext });
       }
     }
-  
+
     const arr = [];
     for await (const dirEntry of Deno.readDir(dir)) {
       const [fn, ext] = dirEntry.name.split(".");
-  
+
       if (!ext && !fn.startsWith("_")) {
         const obj = Object.assign(
           { id: fn },
@@ -115,19 +108,13 @@ export class Engine {
         );
         if (opts.loader === "person") {
           // load image
-          let img = null;
-          for (const i of images) {
-            if (i.id === fn) {
-              img = i;
-              break;
-            }
-          }
+          const img = images.find((i) => i.id === fn);
           if (img) {
             item.imageUrl =
               `https://data.web3privacy.info/img/people/${img.id}.${img.ext}`;
-  
+
             item.thumbs = {}
-  
+
             // scan for thumbnails
             for await (const ti of Deno.readDir(join(dir, "_images", "thumbs"))) {
               const [name, ext] = ti.name.split('.')
@@ -146,7 +133,21 @@ export class Engine {
     }
     return arr;
   }
-  
+
+  async render(src) {
+    const out = {};
+    for (const key of Object.keys(src)) {
+      const val = src[key];
+      if (typeof val === "object" && val.$load) {
+        out[key] = await this.loadDir(val.$load, val.$opts, out);
+        continue;
+      }
+
+      out[key] = val;
+    }
+    return out;
+  }
+
   async build() {
     await emptyDir(DEST_DIR);
     //await writeJSONFile(join(DEST_DIR, "index.json"), this.index);
