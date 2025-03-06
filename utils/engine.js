@@ -34,11 +34,19 @@ export class Engine {
     if (await exists(join(dir, "index.yaml"))) {
       const out = await readYamlFile(join(dir, "index.yaml"));
       if (opts.loader === "events") {
+      if (opts.loader === "events") {
         // check speaker connection & load event images
         for (const ev of out) {
           if (ev.speakers) {
             for (const spId of ev.speakers) {
-              if (!full.people.find((p) => p.id === spId)) {
+              let speakerExists = false;
+              for (const person of full.people) {
+                if (person.id === spId) {
+                  speakerExists = true;
+                  break;
+                }
+              }
+              if (!speakerExists) {
                 throw new Error(`Speaker not exists: ${spId} (event ${ev.id})`);
               }
             }
