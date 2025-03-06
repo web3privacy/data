@@ -38,7 +38,7 @@ export class Engine {
         for (const ev of out) {
           if (ev.speakers) {
             for (const spId of ev.speakers) {
-              if (!full.people.find((p) => p.id === spId)) {
+              if (!full.people.some((p) => p.id === spId)) {
                 throw new Error(`Speaker not exists: ${spId} (event ${ev.id})`);
               }
             }
@@ -108,7 +108,7 @@ export class Engine {
         );
         if (opts.loader === "person") {
           // load image
-          const img = images.find((i) => i.id === fn);
+          const img = images.some((i) => i.id === fn);
           if (img) {
             item.imageUrl =
               `https://data.web3privacy.info/img/people/${img.id}.${img.ext}`;
