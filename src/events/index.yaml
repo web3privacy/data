@@ -2,21 +2,20 @@
 
 - id: c25bue
   type: congress
-  date: "2025-11-01"
+  date: "2025-11-16"
   city: Buenos Aires
   country: ar
   place: "[TBA](https://congress.web3privacy.info)"
   place-address: TBA
   confirmed: true
-  coincidence: "[DevCon](https://devcon.org)"
-  lead: Mykola
+  coincidence: "[Devconnect](https://devconnect.org)"
+  lead: robert
   links:
     rsvp: https://lu.ma/u2sw5kpv
     web: https://congress.web3privacy.info/
   speakers:
     - mykola-siusko
-    - pg
-    - coinmandeer
+    - robert
     - mf
     
 - id: m25rom
@@ -28,7 +27,7 @@
   place-address: TBA
   confirmed: true
   coincidence: "[ETHRome](https://www.ethrome.org)"
-  lead: Mykola
+  lead: pg
   links:
     rsvp: https://lu.ma/8jv4odjn
   speakers:
@@ -37,23 +36,58 @@
     - coinmandeer
     - mf
 
+- id: s25ber
+  type: summit
+  date: "2025-11-16"
+  city: Berlin
+  country: de
+  place: "[TBA](http://dappcon.io)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[Berlin Blockchain Week](https://blockchainweek.berlin)"
+  lead: mykola
+  links:
+    rsvp: https://lu.ma/sq2vtmdg
+    web: http://dappcon.io
+  speakers:
+    - pg
+    - robert
+    - cat
+
+- id: h25ber
+  type: hackathon
+  date: "2025-11-13"
+  city: Berlin
+  country: de
+  place: "[TBA](https://hackathon.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: "[Berlin Blockchain Week](https://blockchainweek.berlin)"
+  lead: mf
+  links:
+    rsvp: https://hackathon.web3privacy.info
+    web: https://hackathon.web3privacy.info
+  speakers:
+    - mf
+    - robert
+    - cat
+
 - id: m25prg
   type: meetup
-  date: "2025-06-06"
+  date: "2025-05-29"
   city: Prague
   country: cz
-  place: "[TBA](https://congress.web3privacy.info)"
+  place: TBA
   place-address: TBA
   confirmed: true
   coincidence: "[ETHPrague](https://ethprague.com)"
-  lead: Mykola
+  lead: alina
   links:
     rsvp: https://lu.ma/jhp1iapn
   speakers:
-    - mykola-siusko
     - pg
     - coinmandeer
-    - mf
+    - alina
 
 - id: m25dam
   type: meetup
@@ -64,14 +98,13 @@
   place-address: TBA
   confirmed: true
   coincidence: "[ETHDam](https://www.ethdam.com)"
-  lead: Mykola
+  lead: pg
   links:
     rsvp: https://lu.ma/73go30ij
     web: https://congress.web3privacy.info
   speakers:
     - mykola-siusko
     - pg
-    - coinmandeer
     - mf
 
 - id: m25buc
@@ -82,12 +115,12 @@
   place: "[Please register to see exact location](https://lu.ma/web3privacy)"
   place-address: Please register to see exact location
   confirmed: true
-  lead: Andrea
+  lead: andrea
   links:
     rsvp: https://lu.ma/9ni8jbzx
   speakers:
     - pg
-    - coinmandeer
+    - mf
 
 # 2024 EVENTS
 
