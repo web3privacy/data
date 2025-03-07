@@ -32,16 +32,6 @@ teams:
     - mykola-siusko
     - pg
     - coinmandeer
-    
-  core-contributors:
-    - robert
-    - cat
-    - mf
-    - jensei
-    - andreea
-    - alina
-    - peter-farbey
-
   core-speakers:
     - david-chaum
     - tor-ekeland
@@ -56,6 +46,20 @@ teams:
     - kurt-opsahl
     - guy-zyskind
     
+  core-contributors:
+    - mykola-siusko
+    - pg
+    - michael-parenti
+    - coinmandeer
+    - robert
+    - cat
+    - odd
+    - mf
+    - jensei
+    - andreea
+    - ann-brody
+    - alina
+
   tiered-contributors:
     - vitalik-buterin
     - scott-moore
@@ -74,10 +78,6 @@ members:
   $load: members
 community-partners:
   $load: community-partners
-events:
-  $load: events
-  $opts:
-    loader: events
 research:
   $load: research
 projects:
@@ -86,3 +86,7 @@ people:
   $load: people
   $opts:
     loader: person
+events:
+  $load: events
+  $opts:
+    loader: events
