@@ -36,8 +36,8 @@
     - coinmandeer
     - mf
 
-- id: s25ber
-  type: summit
+- id: co25ber
+  type: collab
   date: "2025-06-16"
   city: Berlin
   country: de
@@ -52,6 +52,24 @@
   speakers:
     - pg
     - robert
+    - cat
+
+- id: r25ber
+  type: rave
+  date: "2025-06-15"
+  city: Berlin
+  country: de
+  place: TBA
+  place-address: TBA
+  confirmed: true
+  coincidence: "[W3PN Hackathon](https://hackathon.web3privacy.info)"
+  lead: mf
+  links:
+    rsvp: https://lu.ma/sq2vtmdg
+    web: https://dappcon.io
+  speakers:
+    - pg
+    - mf
     - cat
 
 - id: h25ber
@@ -238,7 +256,7 @@
     image: prague01
 
 - id: pc24ber
-  type: privacy-corner
+  type: privacycorner
   date: "2024-05-24"
   days: 3
   city: Berlin
