@@ -38,13 +38,14 @@ $defs:
       type:
         type: string
         enum:
-          - summit
-          - meetup
-          - hackathon
-          - privacy-corner
-          - online-summit
-          - meta-hackathon
+          - collab
           - congress
+          - hackathon
+          - meetup
+          - online
+          - privacy-corner
+          - rave
+          - summit
       confirmed:
         type: boolean
       tags:
