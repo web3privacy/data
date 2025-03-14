@@ -132,6 +132,8 @@ $defs:
             type: string
           email:
             type: string
+          website:
+            type: string
       imageUrl:
         type: string
         format: uri
