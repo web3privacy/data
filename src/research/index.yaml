@@ -1,5 +1,5 @@
 - title: ZK solutions DB
-  status: live
+  status: backlog
   sort: 1
   labels:
     - db
@@ -7,11 +7,10 @@
     - Msiusko
   caption: General DB aggregation focused on ZK for privacy.
   links:
-    web: https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape#readme
     docs: https://docs.web3privacy.info/research/zk-solutions
     
 - title: Privacy Use-Cases DB
-  status: live
+  status: backlog
   sort: 3
   labels:
     - db
@@ -19,7 +18,6 @@
     - Msiusko
   caption: Basic DB of the privacy-centric use-cases.
   links:
-    web: https://github.com/Msiusko/web3privacy/blob/main/Use-cases.md
     docs: https://docs.web3privacy.info/research/usecase-db
     
 - title: Pagency Framework
@@ -31,7 +29,6 @@
   caption: Pagency framework for facilitation privacy use-cases (privacy services
     modelling)
   links:
-    web: https://github.com/web3privacy/web3privacy/blob/main/Pagency/Pagency%20-%20privacy%20use-case%20facilitation%20framework.pdf
     docs: https://docs.web3privacy.info/research/pagency
     
 - title: Privacy Projects Hiring
@@ -83,7 +80,6 @@
     privacy services, use-cases, product stages, missing areas (use-cases),
     funding landscape etc Supported by MolochDAO
   links:
-    web: https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Ethereum%20Ecosystem/Readme.md
     docs: https://docs.web3privacy.info/research/ethereum-privacy-ecosystem/
     
 - title: Privacy use-cases DB 2.0 (major update)
@@ -95,11 +91,11 @@
   links: {}
   
 - title: Privacy features audit concept for security audit organizations & whitehackers
-  status: backlog
+  status: in-progress
   sort: 1
   labels: []
   assignees:
-    - Msiusko
+    - mf
   links: {}
   
 - title: Scoring model for privacy-services
@@ -108,7 +104,9 @@
   labels: []
   assignees:
     - Msiusko
-  links: {}
+  links:
+    web: https://github.com/web3privacy/explorer/blob/main/Research.md#scoring-model
+    docs: https://docs.web3privacy.info/research/scoring-model/
   
 - title: Privacy market outlook (2022)
   status: live
