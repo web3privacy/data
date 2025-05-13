@@ -41,8 +41,8 @@
   date: "2025-06-16"
   city: Berlin
   country: de
-  place: "[TBA](https://dappcon.io)"
-  place-address: TBA
+  place: "[Radialsystem](https://maps.app.goo.gl/cMi3ccPzUvKYnpVp7)"
+  place-address: Holzmarktstraße 33, 10243 Berlin
   confirmed: true
   coincidence: Dappcon
   lead: Mykola
@@ -88,7 +88,7 @@
     - robert
     - cat
 
-- id: co24ber
+- id: co24ftc
   type: collab
   date: "2025-06-10"
   city: Berlin
