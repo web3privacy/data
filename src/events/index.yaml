@@ -88,6 +88,22 @@
     - robert
     - cat
 
+- id: co25ber2
+  type: hackathon
+  date: "2025-06-10"
+  city: Berlin
+  country: de
+  place: "[Engelnest](https://engelnest.de)"
+  place-address: Wilhelm-Kabus-Str. 24, 10829 Berlin
+  confirmed: true
+  coincidence: Berlin Blockchain Week
+  lead: pg
+  links:
+    rsvp: https://lu.ma/ftc-berlin-2025
+    web: https://www.fundingthecommons.io/berlin-2025
+  speakers:
+    - pg
+
 - id: m25prg
   type: meetup
   date: "2025-05-29"
