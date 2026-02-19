@@ -1,3 +1,22 @@
+# 2026 EVENTS
+
+- id: c26mum
+  type: congress
+  date: "2026-11-02"
+  city: Mumbai
+  country: in
+  place: "[TBA](https://congress.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: Devcon
+  lead: Mykola
+  links:
+    rsvp: https://luma.com/spsnos9t
+    web: https://congress.web3privacy.info/
+  speakers:
+    - mykola-siusko
+    - robert
+
 # 2025 EVENTS
 
 - id: c25bue
