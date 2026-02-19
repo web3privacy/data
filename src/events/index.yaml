@@ -16,6 +16,23 @@
   speakers:
     - mykola-siusko
     - robert
+    
+- id: s26ber
+  type: summit
+  date: "2026-06-14"
+  city: Berlin
+  country: de
+  place: "[Funkhaus](https://summit.web3privacy.info)"
+  place-address: TBA
+  confirmed: true
+  coincidence: Berlin Blockchain Week
+  lead: beth
+  links:
+    rsvp: https://luma.com/f47k4xnd
+    web: https://summit.web3privacy.info/
+  speakers:
+    - mykola-siusko
+    - robert
 
 # 2025 EVENTS
 
