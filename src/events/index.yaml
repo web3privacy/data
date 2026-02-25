@@ -416,6 +416,8 @@
   confirmed: true
   coincidence: ETHRome
   lead: PG
+  design:
+    image: rome01
   links:
     web: https://lu.ma/web3privacynow_rome
   speakers:
