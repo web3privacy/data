@@ -71,7 +71,32 @@
     - pg
     - coinmandeer
     - mf
-
+    
+- id: m25tok
+  type: meetup
+  date: "2025-09-11"
+  city: Tokyo
+  country: jp
+  place: Register to see address
+  place-address: Tokyo
+  confirmed: true
+  coincidence: Japan Blockchain Week
+  lead: mykola
+  links:
+    rsvp: https://luma.com/k71p60cb
+    
+- id: m25clj
+  type: meetup
+  date: "2025-06-25"
+  city: Cluj-Napoca
+  country: ro
+  place: "[Insomnia](https://www.google.com/maps/search/?api=1&query=Insomnia%2C+Cluj-Napoca)"
+  place-address: Str. Universității 2, Cluj-Napoca, Romania
+  confirmed: true
+  lead: andreea
+  links:
+    rsvp: https://luma.com/jbzohah1
+    
 - id: co25ber
   type: collab
   date: "2025-06-16"
@@ -188,7 +213,20 @@
   speakers:
     - andreea
     - pg
-    - mf
+    - mf- id: h25mem
+    
+  type: hackathon
+  date: "2025-03-31"
+  city: Online
+  country: xx
+  place: Virtual
+  place-address: Virtual
+  confirmed: true
+  lead: alina
+  helpers:
+    - mykola
+  links:
+    rsvp: https://luma.com/6dtpioqm
 
 # 2024 EVENTS
 
@@ -229,6 +267,19 @@
     - hsinju-chuang
     - michelle-lai
     - ying-tong
+    
+- id: r24bkk
+  type: rave
+  date: "2024-11-11"
+  city: Bangkok
+  country: th
+  place: Register to see address
+  place-address: Bangkok
+  confirmed: true
+  coincidence: Devcon
+  lead: mf
+  links:
+    rsvp: https://luma.com/gqmn3nsl
 
 - id: m24rom
   type: meetup
